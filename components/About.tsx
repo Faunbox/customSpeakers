@@ -25,10 +25,10 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4">15 Years of Excellence</h3>
             <p className="text-gray-300 mb-6">
-              With over 15 years of experience in the speaker industry, we've honed our craft to deliver unparalleled sound quality. Our journey began with a passion for audio and has evolved into a commitment to creating custom speakers that exceed expectations.
+              With over 15 years of experience in the speaker industry, we`&#39;`ve honed our craft to deliver unparalleled sound quality. Our journey began with a passion for audio and has evolved into a commitment to creating custom speakers that exceed expectations.
             </p>
             <p className="text-gray-300">
-              Today, we're proud to work with pro audio equipment, bringing studio-quality sound to homes and venues across the country. Our expertise spans from vintage restorations to cutting-edge designs, ensuring that every project is tailored to our clients' unique needs.
+              Today, we`&#39;`re proud to work with pro audio equipment, bringing studio-quality sound to homes and venues across the country. Our expertise spans from vintage restorations to cutting-edge designs, ensuring that every project is tailored to our clients`&#39;` unique needs.
             </p>
           </motion.div>
           <motion.div
