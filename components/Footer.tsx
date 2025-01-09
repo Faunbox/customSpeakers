@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Volume2, Facebook, Instagram, Mail, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { menuArray } from './Navbar'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -53,7 +54,7 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <ul className="flex flex-wrap justify-center md:justify-end space-x-6">
-              {['Home', 'About', 'Services', 'Gallery', 'Contact'].map((item) => (
+              {menuArray.map((item) => (
                 <li key={item}>
                   <Link href={`#${item.toLowerCase()}`} className="hover:text-purple-400 transition-colors duration-300">
                     {item}
@@ -69,14 +70,14 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p>&copy; {currentYear} CustomSpeakers. All rights reserved.</p>
+          <p>&copy; {currentYear} MF Customs. All rights reserved.</p>
           <a 
             href="/privacy-policy.pdf" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-purple-400 transition-colors duration-300"
           >
-            Privacy Policy
+            Polityka prywatności
           </a>
         </motion.div>
       </div>

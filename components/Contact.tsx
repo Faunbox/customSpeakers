@@ -33,7 +33,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-gray-800">
+    <section id="kontakt" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
@@ -42,7 +42,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Contact Us
+          Kontakt
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12">
           <motion.div
@@ -51,10 +51,10 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold mb-6">Masz pytanie?</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block mb-2">Name</label>
+                <label htmlFor="name" className="block mb-2">Imię</label>
                 <input
                   type="text"
                   id="name"
@@ -66,7 +66,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block mb-2">Email</label>
+                <label htmlFor="email" className="block mb-2">Adres email</label>
                 <input
                   type="email"
                   id="email"
@@ -78,7 +78,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block mb-2">Message</label>
+                <label htmlFor="message" className="block mb-2">Wiadomość</label>
                 <textarea
                   id="message"
                   name="message"
@@ -93,7 +93,7 @@ const Contact = () => {
                 type="submit"
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition-colors duration-300"
               >
-                Send Message
+                Wyślij
               </button>
             </form>
           </motion.div>
@@ -103,7 +103,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-semibold mb-6">Informacje</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-purple-500 mr-4" />

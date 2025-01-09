@@ -17,7 +17,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   return (
-    <section id="gallery" className="py-20 bg-gray-900">
+    <section id="galeria" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
@@ -26,7 +26,7 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Our Gallery
+          Nasze prace
         </motion.h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {galleryItems.map((item, index) => (

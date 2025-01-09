@@ -1,19 +1,23 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <Image
-        src="/placeholder.svg"
-        alt="Custom Speakers Background"
-        fill
-        className="object-cover"
-        sizes="100vw"
-        priority
-      />
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/gramofon.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
       <div className="container mx-auto px-4 z-20">
         <motion.h1
@@ -22,7 +26,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Custom Speakers for Audiophiles
+          Twoje brzmienie, Twój styl
         </motion.h1>
         <motion.p
           className="text-xl md:text-2xl text-center mb-8"
@@ -30,7 +34,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Elevate Your Sound Experience
+          Podnieś jakość swojego dźwięku na nowy poziom
         </motion.p>
         <motion.div
           className="flex justify-center"
@@ -39,16 +43,15 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <a
-            href="#contact"
+            href="#oferta"
             className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
           >
-            Get in Touch
+            Dowiedz się wiecej
           </a>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
-
+export default Hero;

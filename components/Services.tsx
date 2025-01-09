@@ -6,29 +6,29 @@ import { Speaker, Mic, Music, Settings } from 'lucide-react'
 const services = [
   {
     icon: <Speaker className="w-12 h-12 text-purple-500" />,
-    title: 'Custom Speaker Design',
-    description: 'Tailor-made speakers to fit your specific audio needs and space requirements.'
+    title: 'Customowe rozwiązania audio',
+    description: 'Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to mieszkanie czy biuro.'
   },
   {
     icon: <Mic className="w-12 h-12 text-purple-500" />,
-    title: 'Pro Audio Solutions',
-    description: 'Professional-grade audio systems for studios, venues, and audiophiles.'
+    title: 'Projektowanie zwrotnic',
+    description: 'Nasze doświadczenie i wiedza pozwalają nam zaprojektować układy, które idealnie balansują pasma dźwięku, zapewniając naturalne i spójne brzmienie.'
   },
   {
     icon: <Music className="w-12 h-12 text-purple-500" />,
-    title: 'Sound Optimization',
-    description: 'Fine-tuning and calibration services to achieve the perfect sound in any environment.'
+    title: 'Dobór przetworników i wzmacniaczy',
+    description: 'Pomożemy Ci wybrać przetworniki, wzmacniacze i inne elementy, które wspólnie stworzą zestaw audio doskonały pod względem brzmienia i estetyki.'
   },
   {
     icon: <Settings className="w-12 h-12 text-purple-500" />,
-    title: 'Maintenance & Repair',
-    description: 'Expert maintenance and repair services to keep your audio equipment in top condition.'
+    title: 'Usługi CNC',
+    description: 'Dzięki temu możemy realizować nawet najbardziej wymagające projekty, dostosowując każdy detal do Twoich oczekiwań.'
   }
 ]
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-gray-900">
+    <section id="oferta" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
@@ -37,7 +37,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Our Services
+          Oferta
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (

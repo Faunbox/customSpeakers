@@ -7,32 +7,32 @@ const steps = [
   {
     number: '1',
     icon: MessageSquare,
-    title: 'Initial Consultation',
-    description: 'Schedule a consultation with our audio experts to discuss your needs, preferences, and space requirements.'
+    title: 'Konsultacja',
+    description: 'Pierwszy kontakt, w którym opiszesz swoje wymagania'
   },
   {
     number: '2',
     icon: Settings,
-    title: 'Design & Planning',
-    description: 'Our team creates a detailed design proposal including speaker specifications and room acoustics analysis.'
+    title: 'Indywidualny projekt wraz z wyceną',
+    description: 'Po zapoznaniu się z wymaganiami tworzymy projekt 3D do akceptacji oraz pełną wycenę'
   },
   {
     number: '3',
     icon: DollarSign,
-    title: 'Payment',
-    description: 'Zapłać zaliczkę na konto: 34934000059349'
+    title: 'Płatność',
+    description: 'Płatność 50% przed rozpoczęciem produkcji, 50% po otrzymaniu gotowego systemu'
   },
   {
     number: '4',
     icon: Headphones,
-    title: 'Production Phase',
-    description: 'Your custom speakers are handcrafted by our skilled technicians, with rigorous quality testing at every stage.'
+    title: 'Produkcja',
+    description: 'Po otrzymaniu wpłaty, rozpoczynamy proces produkcyjny która trwa zwykle nie dłużej niż 2 tygodnie'
   },
   {
     number: '5',
     icon: Truck,
-    title: 'Installation & Setup',
-    description: 'We carefully deliver and install your speaker system, optimizing the setup for your space.'
+    title: 'Wysyłka',
+    description: 'Wysyłka Twojego systemu kurierem'
   }
 ]
 
@@ -47,7 +47,7 @@ const OrderSteps = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          How to Order Your Custom Speakers
+          Jak zamówić?
         </motion.h2>
         <div className="relative">
           <div className="absolute left-12 top-0 bottom-0 w-0.5 bg-purple-500/30" />

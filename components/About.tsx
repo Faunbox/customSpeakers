@@ -1,11 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-800">
+    <section id="o nas" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
@@ -14,7 +13,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          About Us
+          O nas
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -23,12 +22,12 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-4">15 Years of Excellence</h3>
+            <h3 className="text-2xl font-semibold mb-4">10 Lat Doświadczenia</h3>
             <p className="text-gray-300 mb-6">
-              With over 15 years of experience in the speaker industry, we`&#39;`ve honed our craft to deliver unparalleled sound quality. Our journey began with a passion for audio and has evolved into a commitment to creating custom speakers that exceed expectations.
+            Jesteśmy pasjonatami dźwięku i estetyki, którzy łączą swoją wiedzę i doświadczenie, żeby dostarczyć rozwiązania audio dopasowane do indywidualnych potrzeb naszych klientów. Umiejętności zdobyte przez lata pozwalają nam łączyć wiedzę techniczną z wyjątkowym podejściem do projektowania.
             </p>
             <p className="text-gray-300">
-              Today, we`&#39;`re proud to work with pro audio equipment, bringing studio-quality sound to homes and venues across the country. Our expertise spans from vintage restorations to cutting-edge designs, ensuring that every project is tailored to our clients`&#39;` unique needs.
+            Naszym celem jest dostarczanie rozwiązań, które nie tylko brzmią doskonale, ale także wyglądają jak dzieła sztuki, tworząc idealne dopełnienie Twojej przestrzeni. 
             </p>
           </motion.div>
           <motion.div
@@ -38,14 +37,17 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative h-80">
-              <Image
-                src="/placeholder.svg"
-                alt="Custom Speaker Workshop"
-                fill
-                className="object-cover rounded-lg shadow-xl"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+            <div className="relative h-80 rounded-sm overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src="/gramofon.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </motion.div>
         </div>
