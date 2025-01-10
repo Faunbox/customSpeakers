@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -37,17 +38,14 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative h-80 rounded-sm overflow-hidden">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-              >
-                <source src="/gramofon.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="relative h-80">
+              <Image
+                src="/images/frezowanie.webp"
+                alt="Custom Speaker Workshop"
+                fill
+                className="object-cover rounded-lg shadow-xl"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </motion.div>
         </div>

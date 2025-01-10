@@ -33,7 +33,9 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
         >
           <Volume2 className="w-8 h-8 text-purple-500" />
-          <span className="text-xl font-bold">CustomSpeakers</span>
+          <a href="#start">
+          <span className="text-xl font-bold">MF Custom Speakers</span>
+          </a>
         </motion.div>
         <ul className="hidden md:flex space-x-6">
           {menuArray.map((item) => (

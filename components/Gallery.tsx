@@ -5,12 +5,16 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const galleryItems = [
-  { id: 1, src: '/placeholder.svg', alt: 'Custom Speaker 1' },
-  { id: 2, src: '/placeholder.svg', alt: 'Custom Speaker 2' },
-  { id: 3, src: '/placeholder.svg', alt: 'Custom Speaker 3' },
-  { id: 4, src: '/placeholder.svg', alt: 'Custom Speaker 4' },
-  { id: 5, src: '/placeholder.svg', alt: 'Custom Speaker 5' },
-  { id: 6, src: '/placeholder.svg', alt: 'Custom Speaker 6' },
+  { id: 1, src: '/images/1.jpg', alt: 'Customowy system audio' },
+  { id: 2, src: '/images/2.jpg', alt: 'Customowy system audio' },
+  { id: 3, src: '/images/3.jpg', alt: 'Customowy system audio' },
+  { id: 4, src: '/images/4.jpg', alt: 'Customowy system audio' },
+  { id: 5, src: '/images/5.jpg', alt: 'Customowy system audio' },
+  { id: 6, src: '/images/6.jpg', alt: 'Customowy system audio' },
+  { id: 7, src: '/images/7.jpg', alt: 'Customowy system audio' },
+  { id: 8, src: '/images/8.jpg', alt: 'Customowy system audio' },
+  { id: 9, src: '/images/9.jpg', alt: 'Customowy system audio' },
+  { id: 10, src: '/images/10.jpg', alt: 'Customowy system audio' },
 ]
 
 const Gallery = () => {

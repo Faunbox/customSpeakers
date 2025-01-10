@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "high-end speakers",
     "audiophile",
   ],
-  authors: [{ name: "Custom Speakers Team" }],
-  creator: "Custom Speakers",
-  publisher: "Custom Speakers",
+  authors: [{ name: "Filip Sojecki" }],
+  creator: "Filip Sojecki",
+  publisher: "Filip Sojecki",
   formatDetection: {
     email: false,
     address: false,

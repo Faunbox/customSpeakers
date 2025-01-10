@@ -27,7 +27,7 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
             >
               <Volume2 className="w-8 h-8 text-purple-500 mr-2" />
-              <span className="text-xl font-bold">CustomSpeakers</span>
+              <span className="text-xl font-bold">MF Custom Speakers</span>
             </motion.div>
             <motion.div 
               className="flex space-x-4"
@@ -70,7 +70,7 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p>&copy; {currentYear} MF Customs. All rights reserved.</p>
+          <p>&copy; {currentYear} MF Custom Speakers. All rights reserved.</p>
           <a 
             href="/privacy-policy.pdf" 
             target="_blank" 
