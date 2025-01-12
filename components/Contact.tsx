@@ -1,36 +1,43 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin } from 'lucide-react'
-import toast from 'react-hot-toast'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Phone, Mail, MapPin, MessageSquareMore } from "lucide-react";
+import toast from "react-hot-toast";
+
+export const email = "kontakt@mfcustoms.pl";
+export const phone_number = "790 616 496";
+export const whatsApp = phone_number.replaceAll(" ", "");
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({ ...prevState, [name]: value }))
-  }
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
     // Here you would typically send the form data to your server or a service
-    console.log('Form submitted:', formData)
-    
+    console.log("Form submitted:", formData);
+
     // Simulate an API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     // Show success toast
-    toast.success('Message sent successfully!')
-    
+    toast.success("Message sent successfully!");
+
     // Reset form after submission
-    setFormData({ name: '', email: '', message: '' })
-  }
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   return (
     <section id="kontakt" className="py-20 bg-gray-800">
@@ -54,7 +61,9 @@ const Contact = () => {
             <h3 className="text-2xl font-semibold mb-6">Masz pytanie?</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block mb-2">Imię</label>
+                <label htmlFor="name" className="block mb-2">
+                  Imię
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -66,7 +75,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block mb-2">Adres email</label>
+                <label htmlFor="email" className="block mb-2">
+                  Adres email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -78,7 +89,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block mb-2">Wiadomość</label>
+                <label htmlFor="message" className="block mb-2">
+                  Wiadomość
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -107,23 +120,39 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-purple-500 mr-4" />
-                <span>+1 (555) 123-4567</span>
+                <a href={`tel:${phone_number}`}>
+                  <span>+48 {phone_number}</span>
+                </a>
+              </div>
+              <div className="flex items-center">
+                <MessageSquareMore className="w-6 h-6 text-purple-500 mr-4" />
+                <a
+                  href={`https://wa.me/${whatsApp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>+48 {phone_number}</span>
+                </a>
               </div>
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-purple-500 mr-4" />
-                <span>info@customspeakers.com</span>
+                <a href={`mailto:${email}`}>
+                  <span>{email}</span>
+                </a>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-start">
                 <MapPin className="w-6 h-6 text-purple-500 mr-4" />
-                <span>123 Audio Lane, Soundville, SP 12345</span>
+                <div>
+                  <p>34-300, Żywiec</p>
+                  <p>Polska</p>
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
-
+export default Contact;
