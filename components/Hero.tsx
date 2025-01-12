@@ -34,7 +34,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Podnieś jakość swojego dźwięku na nowy poziom
+          System audio dopasowany do Ciebie
         </motion.p>
         <motion.div
           className="flex justify-center"

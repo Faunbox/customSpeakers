@@ -6,10 +6,7 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    default: "MF Custom Speakers | Elevate Your Sound Experience",
-    template: "%s | Custom Speakers",
-  },
+  title: "MF Custom Speakers | System audio dopasowany do Ciebie",
   description:
     "Elevate your sound experience with our custom speakers. We offer tailor-made audio solutions for audiophiles, studios, and venues.",
   keywords: [
