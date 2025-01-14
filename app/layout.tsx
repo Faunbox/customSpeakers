@@ -6,15 +6,22 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MF Custom Speakers | System audio dopasowany do Ciebie",
+  title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
   description:
-    "Elevate your sound experience with our custom speakers. We offer tailor-made audio solutions for audiophiles, studios, and venues.",
+    "Specjalizujemy się w tworzeniu customowych obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
   keywords: [
-    "custom speakers",
-    "audio",
-    "sound system",
-    "high-end speakers",
-    "audiophile",
+    "obudowy głośnikowe",
+    "customowe systemy audio",
+    "obudowy diy",
+    "system hifi",
+    "audiofil",
+    "obudowy kolumn",
+    "obudowy głośników",
+    "kolumny diy",
+    "projektowanie głośników",
+    "projektowanie kolumn",
+    "projekt kolumn głośnikowych",
+    "kolumny audio",
   ],
   authors: [{ name: "Filip Sojecki" }],
   creator: "Filip Sojecki",
@@ -25,17 +32,17 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Custom Speakers | Elevate Your Sound Experience",
+    title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
     description:
-      "Elevate your sound experience with our custom speakers. We offer tailor-made audio solutions for audiophiles, studios, and venues.",
-    url: "https://www.customspeakers.com",
-    siteName: "Custom Speakers",
+      "Specjalizujemy się w tworzeniu customowych obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
+    url: "https://mfcustoms.pl",
+    siteName: "Mf Custom Speakers",
     images: [
       {
-        url: "https://www.customspeakers.com/og-image.jpg",
+        url: "https://custom-speakers.vercel.app/images/1.jpg",
         width: 1200,
         height: 630,
-        alt: "Custom Speakers - Elevate Your Sound Experience",
+        alt: "MF Custom Speakers = Dzwięk na Twoich zasadach",
       },
     ],
     locale: "pl",
@@ -43,11 +50,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Speakers | Elevate Your Sound Experience",
+    title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
     description:
-      "Elevate your sound experience with our custom speakers. We offer tailor-made audio solutions for audiophiles, studios, and venues.",
-    images: ["https://www.customspeakers.com/twitter-image.jpg"],
-    creator: "@customspeakers",
+      "Tworzymy customowe obudowy głośnikowe dla audiofilów. Precyzyjne wykonanie, nowoczesny design i najwyższa jakość dźwięku. Sprawdź, jak możemy poprawić brzmienie Twojego systemu audio!",
+    images: ["https://custom-speakers.vercel.app/images/1.jpg"],
+    creator: "Filip_Sojecki",
   },
   robots: {
     index: true,
