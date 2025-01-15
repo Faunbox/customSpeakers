@@ -54,6 +54,7 @@ export async function sendContactEmail(formData: FormData) {
   console.log(customerEmail);
 
   const emailToCustomer: Template = {
+    //@ts-expect-error:jest ok
     personalizations: [
       {
         //@ts-expect-error:jest ok
