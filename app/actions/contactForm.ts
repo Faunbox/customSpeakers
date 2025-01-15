@@ -57,7 +57,6 @@ export async function sendContactEmail(formData: FormData) {
     //@ts-expect-error:jest ok
     personalizations: [
       {
-        //@ts-expect-error:jest ok
         to: customerEmail,
         dynamic_template_data: {
           name: customerName,
