@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import CookieInfo from "@/components/CookieInfo";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
@@ -19,7 +18,6 @@ export default function Home() {
       <OrderSteps />
       <Contact />
       <Footer />
-      <CookieInfo />
     </main>
   );
 }
