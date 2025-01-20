@@ -1,5 +1,6 @@
 "use server";
-import sgMail, { MailDataRequired } from "@sendgrid/mail";
+// import sgMail, { MailDataRequired } from "@sendgrid/mail";
+import sgMail from "@sendgrid/mail";
 
 interface mail {
   to: string | string[];
@@ -27,10 +28,10 @@ export type TemplateIdEmail = {
   template_id: string;
 };
 
-type Template = MailDataRequired | MailDataRequired[] | TemplateIdEmail;
+// type Template = MailDataRequired | MailDataRequired[] | TemplateIdEmail;
 
 export async function sendContactEmail(formData: FormData) {
-  sgMail.setApiKey(process.env.SENDGRID_EMAIL1_API_KEY || "");
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY || "");
   const name = formData.get("name")?.toString();
   const email = formData.get("email")?.toString();
   const description = formData.get("description");
@@ -50,29 +51,29 @@ export async function sendContactEmail(formData: FormData) {
   };
 
   const customerEmail = email?.replace(/"/g, "");
-  const customerName = name?.replace(/"/g, "");
+  // const customerName = name?.replace(/"/g, "");
   console.log(customerEmail);
 
-  const emailToCustomer: Template = {
-    //@ts-expect-error:jest ok
-    personalizations: [
-      {
-        to: customerEmail,
-        dynamic_template_data: {
-          name: customerName,
-        },
-      },
-    ],
-    from: {
-      email: process.env.SENDGRID_EMAIL!,
-      name: "MF Audio",
-    },
-    reply_to: {
-      email: process.env.SENDGRID_EMAIL!,
-      name: "MF Audio",
-    },
-    template_id: "d-6631ef651ed14dd2a924d1d296896f96",
-  };
+  // const emailToCustomer: Template = {
+  //   //@ts-expect-error:jest ok
+  //   personalizations: [
+  //     {
+  //       to: customerEmail,
+  //       dynamic_template_data: {
+  //         name: customerName,
+  //       },
+  //     },
+  //   ],
+  //   from: {
+  //     email: process.env.SENDGRID_EMAIL!,
+  //     name: "MF Audio",
+  //   },
+  //   reply_to: {
+  //     email: process.env.SENDGRID_EMAIL!,
+  //     name: "MF Audio",
+  //   },
+  //   template_id: "d-6631ef651ed14dd2a924d1d296896f96",
+  // };
 
   await sgMail
     .send(msgToCompany)
@@ -89,9 +90,9 @@ export async function sendContactEmail(formData: FormData) {
       };
     });
 
-  await sgMail
-  //@ts-expect-error:jest ok
-    .send(emailToCustomer)
-    .then(() => console.log("wysłano maila do klienta"));
+  // await sgMail
+  // //@ts-expect-error:jest ok
+  //   .send(emailToCustomer)
+  //   .then(() => console.log("wysłano maila do klienta"));
   return { response };
 }
