@@ -14,34 +14,34 @@ const steps = [
     number: "1",
     icon: MessageSquare,
     title: "Konsultacja",
-    description: "Pierwszy kontakt, w którym opiszesz swoje wymagania",
+    description: "Pierwszy kontakt, w którym opiszesz swoje wymagania.",
   },
   {
     number: "2",
     icon: Settings,
     title: "Indywidualny projekt wraz z wyceną",
     description:
-      "Po zapoznaniu się z wymaganiami tworzymy projekt 3D do akceptacji oraz pełną wycenę",
+      "Po zapoznaniu się z wymaganiami, tworzymy projekt 3D do akceptacji oraz pełną wycenę.",
   },
   {
     number: "3",
     icon: DollarSign,
     title: "Płatność",
     description:
-      "Płatność 50% przed rozpoczęciem produkcji, 50% po otrzymaniu gotowego systemu",
+      "Płatność 50% przed rozpoczęciem produkcji, 50% po otrzymaniu gotowego systemu.",
   },
   {
     number: "4",
     icon: Drill,
     title: "Produkcja",
     description:
-      "Po otrzymaniu wpłaty, rozpoczynamy proces produkcyjny która trwa zwykle nie dłużej niż 2 tygodnie",
+      "Po otrzymaniu wpłaty, rozpoczynamy proces produkcyjny, który trwa zwykle nie dłużej niż 2 tygodnie.",
   },
   {
     number: "5",
     icon: Truck,
     title: "Wysyłka",
-    description: "Wysyłka Twojego systemu kurierem",
+    description: "Wysyłka Twojego systemu kurierem.",
   },
 ];
 

@@ -7,17 +7,17 @@ const services = [
   {
     icon: <Speaker className="w-12 h-12 text-purple-500" />,
     title: 'Customowe rozwiązania audio',
-    description: 'Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować  będą twoje przyszłe kolumny, twój obecny wzmacniacz oraz upodobania brzmieniowe.'
+    description: 'Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe.'
   },
   {
     icon: <Mic className="w-12 h-12 text-purple-500" />,
     title: 'Projektowanie zwrotnic',
-    description: 'Nasze doświadczenie i wiedza pozwalają nam wykonywac zwrotnice spelniajace preferencje brzmieniowe zamawiającego. Jest to serce systemu, nadające charakter, barwę i ogólny odbiór dźwięku generowanego przez kolumny.'
+    description: 'Nasze doświadczenie i wiedza pozwalają nam wykonywać zwrotnice spełniające preferencje brzmieniowe Zamawiającego. Jest to serce systemu, nadające charakter, barwę i ogólny odbiór dźwięku generowanego przez kolumny.'
   },
   {
     icon: <Music className="w-12 h-12 text-purple-500" />,
     title: 'Dobór przetworników i ich aplikacja',
-    description: 'Znając parametry twojego obecnego systemu pomożemy dobrać głośniki, układ oraz ich konfigurację.'
+    description: 'Znając parametry Twojego obecnego systemu, pomożemy dobrać głośniki, układ oraz ich konfigurację.'
   },
   {
     icon: <Settings className="w-12 h-12 text-purple-500" />,

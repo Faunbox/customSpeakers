@@ -69,7 +69,7 @@ export function CookieConsent() {
                 <div className="flex flex-col sm:flex-row gap-2 min-w-fit">
                   <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                     <DialogTrigger asChild>
-                      <Button variant="outline">Ustawienia cookie</Button>
+                      <Button>Ustawienia cookie</Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                       <DialogHeader>
@@ -127,10 +127,10 @@ export function CookieConsent() {
                       </DialogFooter>
                     </DialogContent>
                   </Dialog>
-                  <Button variant="outline" onClick={handleRejectAll}>
+                  <Button onClick={handleRejectAll}>
                     Odrzuć wszystko
                   </Button>
-                  <Button onClick={handleAcceptAll}>
+                  <Button variant="outline" onClick={handleAcceptAll}>
                     Zaakceptuj wszystkie
                   </Button>
                 </div>

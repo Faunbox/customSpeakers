@@ -1,24 +1,24 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const galleryItems = [
-  { id: 1, src: '/images/1.jpg', alt: 'Customowy system audio' },
-  { id: 2, src: '/images/2.jpg', alt: 'Customowy system audio' },
-  { id: 3, src: '/images/3.jpg', alt: 'Customowy system audio' },
-  { id: 4, src: '/images/4.jpg', alt: 'Customowy system audio' },
-  { id: 5, src: '/images/5.jpg', alt: 'Customowy system audio' },
-  { id: 6, src: '/images/6.jpg', alt: 'Customowy system audio' },
-  { id: 7, src: '/images/7.jpg', alt: 'Customowy system audio' },
-  { id: 8, src: '/images/8.jpg', alt: 'Customowy system audio' },
-  { id: 9, src: '/images/9.jpg', alt: 'Customowy system audio' },
-  { id: 10, src: '/images/10.jpg', alt: 'Customowy system audio' },
-]
+  { id: 1, src: "/images/1.webp", alt: "Customowy system audio" },
+  { id: 2, src: "/images/2.webp", alt: "glosnik diy" },
+  { id: 3, src: "/images/3.webp", alt: "kolumny diy" },
+  { id: 4, src: "/images/4.webp", alt: "glosnik custom" },
+  { id: 5, src: "/images/5.webp", alt: "system audio diy" },
+  { id: 6, src: "/images/6.webp", alt: "Customowy system audio" },
+  { id: 7, src: "/images/7.webp", alt: "Customowy system audio" },
+  { id: 8, src: "/images/8.webp", alt: "Customowy system audio" },
+  { id: 9, src: "/images/9.webp", alt: "Customowy system audio" },
+  { id: 10, src: "/images/10.webp", alt: "Customowy system audio" },
+];
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   return (
     <section id="galeria" className="py-20 bg-gray-900">
@@ -70,8 +70,14 @@ const Gallery = () => {
             exit={{ scale: 0.8 }}
           >
             <Image
-              src={galleryItems.find(item => item.id === selectedImage)?.src || ''}
-              alt={galleryItems.find(item => item.id === selectedImage)?.alt || ''}
+              src={
+                galleryItems.find((item) => item.id === selectedImage)?.src ||
+                ""
+              }
+              alt={
+                galleryItems.find((item) => item.id === selectedImage)?.alt ||
+                ""
+              }
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -80,8 +86,7 @@ const Gallery = () => {
         </motion.div>
       )}
     </section>
-  )
-}
+  );
+};
 
-export default Gallery
-
+export default Gallery;
