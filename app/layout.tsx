@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MF Custom Speakers | Kolumny custom diy na zamówienie",
+
   description:
     "Specjalizujemy się w tworzeniu customowych obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
   keywords: [
@@ -77,6 +78,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "https://www.mfcustoms.pl",
+  },
   // You can add more metadata fields as needed
 };
 
