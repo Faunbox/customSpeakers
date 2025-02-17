@@ -8,6 +8,7 @@ import { z } from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendContactEmail } from "@/app/actions/contactForm";
+import { useGtagSendEvent } from "@/app/hooks/useGtagSendEvent";
 
 export const email = "kontakt@mfcustoms.pl";
 export const phone_number = "790 616 496";
@@ -46,6 +47,7 @@ const Contact = () => {
   } = useForm<ValidationSchema>({
     resolver: zodResolver(validationSchema),
   });
+  const gtagSendEvent = useGtagSendEvent();
 
   async function onSend(data: ValidationSchema) {
     try {
@@ -60,6 +62,7 @@ const Contact = () => {
     } catch {
       alert("Błąd podczas wysyłania formularza");
     } finally {
+      gtagSendEvent(process.env.WEBSITE_NAME as string);
       toast.success("Message sent successfully!");
       setIsSubmitting(false);
       setDisabled(true);
