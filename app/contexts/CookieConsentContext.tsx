@@ -82,9 +82,7 @@ export const CookieConsentProvider: React.FC<{ children: React.ReactNode }> = ({
     // Necessary cookies are always enabled
 
     // Google Tag Manager
-    //@ts-expect-error:czekam na reset limitu v0
     if (typeof window.dataLayer !== "undefined") {
-      //@ts-expect-error:czekam na reset limitu v0
       window.dataLayer.push({
         event: "cookie_consent_update",
         analytics_storage: settings.analytics ? "granted" : "denied",
