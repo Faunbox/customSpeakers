@@ -10,7 +10,7 @@ const galleryItems = [
   { id: 3, src: "/images/3.webp", alt: "kolumny diy" },
   { id: 4, src: "/images/4.webp", alt: "glosnik custom" },
   { id: 5, src: "/images/5.webp", alt: "system audio diy" },
-  { id: 6, src: "/images/6.webp", alt: "Customowy system audio" },
+  { id: 6, src: "/images/6.webp", alt: "Kolumny na zamówienie" },
   { id: 7, src: "/images/7.webp", alt: "Customowy system audio" },
   { id: 8, src: "/images/8.webp", alt: "Customowy system audio" },
   { id: 9, src: "/images/9.webp", alt: "Customowy system audio" },

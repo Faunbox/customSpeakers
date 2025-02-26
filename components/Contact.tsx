@@ -63,7 +63,7 @@ const Contact = () => {
       alert("Błąd podczas wysyłania formularza");
     } finally {
       gtagSendEvent(process.env.WEBSITE_NAME as string);
-      toast.success("Message sent successfully!");
+      toast.success("Wiadomość została wysłana!");
       setIsSubmitting(false);
       setDisabled(true);
       console.log(response);
