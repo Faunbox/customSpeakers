@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { CookieConsentProvider } from "./contexts/CookieConsentContext";
-import * as Sentry from "@sentry/nextjs";
 import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleTagManager } from "@next/third-parties/google"
 
@@ -11,9 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MF Custom Speakers | Kolumny custom diy na zamówienie",
-
   description:
-    "Specjalizujemy się w tworzeniu customowych obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
+    "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
   keywords: [
     "obudowy głośnikowe",
     "customowe systemy audio",
@@ -27,6 +25,8 @@ export const metadata: Metadata = {
     "projektowanie kolumn",
     "projekt kolumn głośnikowych",
     "kolumny audio",
+    "kolumny na zamówienie",
+    "kolumny na zamowienie"
   ],
   authors: [{ name: "Filip Sojecki" }],
   creator: "Filip Sojecki",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
     description:
-      "Kolumny diy dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
+      "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
     url: "https://mfcustoms.pl",
     siteName: "Mf Custom Speakers",
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
     description:
-      "Tworzymy customowe obudowy głośnikowe dla audiofilów. Precyzyjne wykonanie, nowoczesny design i najwyższa jakość dźwięku. Sprawdź, jak możemy poprawić brzmienie Twojego systemu audio!",
+      "Tworzymy kolumny na zamówienie dla audiofilów i miłośników dobrego dzwięku. Precyzyjne wykonanie, nowoczesny design i najwyższa jakość dźwięku. Sprawdź, jak możemy poprawić brzmienie Twojego systemu audio!",
     images: ["https://custom-speakers.vercel.app/images/1.jpg"],
     creator: "Filip_Sojecki",
   },
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
   },
 };
 
-Sentry.init({
-  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-  tracesSampleRate: 1.0,
-});
+// Sentry.init({
+//   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+//   tracesSampleRate: 1.0,
+// });
 
 export default function RootLayout({
   children,
