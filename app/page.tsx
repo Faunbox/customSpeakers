@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import OrderSteps from "@/components/OrderSteps";
 import Services from "@/components/Services";
+import TextWall from "@/components/TextWall";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Gallery />
       <OrderSteps />
+      <TextWall />
       <Contact />
       <Footer />
     </main>

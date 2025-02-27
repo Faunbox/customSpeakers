@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, Menu, X } from "lucide-react";
 
-export const menuArray = ["Start", "O nas", "Oferta", "Galeria", "Kontakt"];
+export const menuArray = ["Start", "O nas", "Oferta", "Galeria", "Historia", "Kontakt"];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
