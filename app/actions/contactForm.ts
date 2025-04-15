@@ -50,9 +50,10 @@ export async function sendContactEmail(formData: FormData) {
     </div>`,
   };
 
-  const customerEmail = email?.replace(/"/g, "");
+  // const customerEmail = email?.replace(/"/g, "");
+  // console.log(customerEmail);
+
   // const customerName = name?.replace(/"/g, "");
-  console.log(customerEmail);
 
   // const emailToCustomer: Template = {
   //   //@ts-expect-error:jest ok
@@ -80,7 +81,7 @@ export async function sendContactEmail(formData: FormData) {
     .then(() => {
       response = {
         status: "success",
-        message: "Message send",
+        message: "Wysłano Twoją wiadomość!",
       };
     })
     .catch((error) => {

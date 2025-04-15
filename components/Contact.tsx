@@ -55,15 +55,19 @@ const Contact = () => {
         formData.append(key, JSON.stringify(value));
       });
       const res = await sendContactEmail(formData);
-
-      setResponse(res.response);
+      console.log(res.response);
+      setResponse({
+        status: res.response.status,
+        message: res.response.message,
+      });
     } catch {
       alert("Błąd podczas wysyłania formularza");
+      console.log(response);
     } finally {
       toast.success("Wiadomość została wysłana!");
+      console.log(response);
       setIsSubmitting(false);
       setDisabled(true);
-      console.log(response);
     }
   }
 
