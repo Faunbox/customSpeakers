@@ -15,6 +15,7 @@ const galleryItems = [
   { id: 8, src: "/images/8.webp", alt: "Customowy system audio" },
   { id: 9, src: "/images/9.webp", alt: "Customowy system audio" },
   { id: 10, src: "/images/10.webp", alt: "Customowy system audio" },
+  { id: 11, src: "/images/11.webp", alt: "Kolumny na zamówienie" },
 ];
 
 const Gallery = () => {
