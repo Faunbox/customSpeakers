@@ -7,7 +7,7 @@ import Image from "next/image";
 const galleryItems = [
   { id: 1, src: "/images/1.webp", alt: "Customowy system audio" },
   { id: 11, src: "/images/11.webp", alt: "Kolumny na zamówienie" },
-  { id: 1, src: "/images/1.jpg", alt: "Customowy system audio" },
+  { id: 12, src: "/images/1.jpg", alt: "Customowy system audio" },
   { id: 2, src: "/images/2.webp", alt: "glosnik diy" },
   { id: 3, src: "/images/3.webp", alt: "kolumny diy" },
   { id: 4, src: "/images/4.webp", alt: "glosnik custom" },
