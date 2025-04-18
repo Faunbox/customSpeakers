@@ -14,8 +14,8 @@ const galleryItems = [
   { id: 5, src: "/images/5.webp", alt: "system audio diy" },
   { id: 6, src: "/images/6.webp", alt: "Kolumny na zamówienie" },
   { id: 7, src: "/images/7.webp", alt: "Customowy system audio" },
-  { id: 8, src: "/images/8.webp", alt: "Customowy system audio" },
-  { id: 9, src: "/images/9.webp", alt: "Customowy system audio" },
+  { id: 8, src: "/images/8.webp", alt: "Kolumny na zamówienie" },
+  { id: 9, src: "/images/9.webp", alt: "Obudowy na zamówienie" },
   { id: 10, src: "/images/10.webp", alt: "Customowy system audio" },
 ];
 
