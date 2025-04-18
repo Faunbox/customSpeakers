@@ -39,7 +39,7 @@ export async function sendContactEmail(formData: FormData) {
   let response: ResponseData = {};
 
   const msgToCompany: mail = {
-    to: ["faunbox2@gmail.com", "kontakt@mfcustoms.pl"], // Change to your recipient
+    to: ["faunbox2@gmail.com", "iron_imp@op.pl"], // Change to your recipient
     from: process.env.SENDGRID_EMAIL!, // Change to your verified sender
     subject: `Wiadomośc z formularza kontaktowego od ${name}`,
     text: "data?.message",
