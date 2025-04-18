@@ -28,7 +28,7 @@ const About = () => {
             Jesteśmy pasjonatami dźwięku i estetyki, którzy łączą swoją wiedzę i doświadczenie, żeby dostarczyć rozwiązania audio dopasowane do indywidualnych potrzeb naszych klientów. Umiejętności zdobyte przez lata pozwalają nam łączyć wiedzę techniczną z wyjątkowym podejściem do projektowania.
             </p>
             <p className="text-gray-300">
-            Naszym celem jest dostarczanie rozwiązań, które nie tylko brzmią doskonale, ale także wyglądają jak dzieła sztuki, tworząc idealne dopełnienie Twojej przestrzeni. 
+            Naszym celem jest dostarczanie obudowy na zamówienie, które nie tylko brzmią doskonale, ale także wyglądają jak dzieła sztuki, tworząc idealne dopełnienie Twojej przestrzeni. Nasze kolumny na zamówienie to gwarancja satysfakcji.
             </p>
           </motion.div>
           <motion.div

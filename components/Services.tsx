@@ -6,7 +6,7 @@ import { Speaker, Mic, Music, Settings } from 'lucide-react'
 const services = [
   {
     icon: <Speaker className="w-12 h-12 text-purple-500" />,
-    title: 'Customowe rozwiązania audio',
+    title: 'Kolumny na zamówienie',
     description: 'Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe.'
   },
   {

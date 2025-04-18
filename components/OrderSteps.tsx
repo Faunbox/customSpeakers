@@ -41,7 +41,8 @@ const steps = [
     number: "5",
     icon: Truck,
     title: "Wysyłka",
-    description: "Wysyłka Twojego systemu kurierem.",
+    description:
+      "Bezpieczne pakowanie i wysyłka Twojego systemu kurierem lub odbiór osobisty w siedzibie naszej firmy do czego serdecznie zapraszamy!",
   },
 ];
 

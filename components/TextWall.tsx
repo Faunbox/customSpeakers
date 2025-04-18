@@ -12,13 +12,13 @@ const TextWall = () => {
       icon: <Volume2 className="w-8 h-8 text-purple-500" />,
       title: "Pasja",
       content:
-        "Pomysł na wykonywanie kolumn na zamówienie zrodził się z pasji do muzyki i technologii. MF Customs jest owocem wieloletniej dedykacji do uzyskania naturalnego i angażującego dzwięku oraz chęci dostarczenia efektu sonicznego w ciekawej i nieszablonowej formie.",
+        "Kolumny na zamówienie - pomysł zrodził się z pasji do muzyki i technologii. MF Customs jest owocem wieloletniej dedykacji do uzyskania naturalnego i angażującego dzwięku oraz chęci dostarczenia efektu sonicznego w ciekawej i nieszablonowej formie.",
     },
     {
       icon: <Music className="w-8 h-8 text-purple-500" />,
       title: "Misja",
       content:
-        "Nasza misja jest dostarczenie produktu, który wypełni Twoje pomieszczenie dzwiękiem prawdziwym ale i nie pozbawionym emocji. Oprócz dźwięku jest również forma wizualna - piękne i niepowtarzalne obudowy głośnikowe. Jakość i przywiązanie do detali - to nasze motto.",
+        "Naszą misją jest dostarczenie kolumny na zamówienie, które wypełnią Twoje pomieszczenie dzwiękiem prawdziwym ale i nie pozbawionym emocji. Oprócz dźwięku jest również forma wizualna - piękne i niepowtarzalne obudowy głośnikowe. Jakość i przywiązanie do detali - to nasze motto.",
     },
     {
       icon: <Mic className="w-8 h-8 text-purple-500" />,
@@ -30,7 +30,7 @@ const TextWall = () => {
       icon: <Radio className="w-8 h-8 text-purple-500" />,
       title: "Jakość",
       content:
-        "Nasze obudowy są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji. Stosujemy materiały najwyższej jakości. Dzięki maszynom cnc, mamy pewność że cięcia będą wykonane z dużą dokładnością i powtarzalnością. Zawsze dbamy o optymalizację obudowy pod kątem jej sztywności, fal stojących, dyfrakcji na ostrych krawędziach, wytłumienia i rozmieszczenia głośników.",
+        "Nasze obudowy na są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji. Stosujemy materiały najwyższej jakości. Dzięki maszynom cnc, mamy pewność że cięcia będą wykonane z dużą dokładnością i powtarzalnością. Zawsze dbamy o optymalizację obudowy pod kątem jej sztywności, fal stojących, dyfrakcji na ostrych krawędziach, wytłumienia i rozmieszczenia głośników.",
     },
   ]
 
