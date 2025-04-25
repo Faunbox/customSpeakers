@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MF Custom Speakers | Kolumny custom diy na zamówienie",
   description:
-    "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
+    "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe.",
   keywords: [
     "obudowy głośnikowe",
     "customowe systemy audio",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "projektowanie głośników",
     "projektowanie kolumn",
     "projekt kolumn głośnikowych",
-    "kolumny audio",
+    "obudowy kolumn na zamówienie",
     "kolumny na zamówienie",
     "kolumny na zamowienie"
   ],
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
+    title: "MF Custom Speakers | Kolumny na zamówienie",
     description:
-      "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Odkryj, jak indywidualnie zaprojektowana obudowa może odmienić brzmienie Twojego systemu audio!",
-    url: "https://mfcustoms.pl",
+      "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe.",
+    url: "https://www.mfcustoms.pl",
     siteName: "Mf Custom Speakers",
     images: [
       {

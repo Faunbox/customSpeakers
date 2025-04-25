@@ -17,8 +17,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { Icon: Facebook, label: "Facebook", href: "#" },
-    { Icon: Instagram, label: "Instagram", href: "#" },
+    { Icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61575753504835" },
+    { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/mf_customs_audio/" },
     { Icon: Mail, label: "Email", href: `mailto:${email}` },
     { Icon: Phone, label: "Phone", href: `tel:${phone_number}` },
     { Icon: MessageSquareMore, label: "WhatsApp", href: (`https://wa.me/${whatsApp}`) },
