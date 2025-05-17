@@ -17,6 +17,7 @@ import { useTranslations } from "next-intl";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const t = useTranslations('Navigation');
+  const tt = useTranslations('Footer');
 
   const socialLinks = [
     { Icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61575753504835" },
@@ -93,7 +94,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-purple-400 transition-colors duration-300"
           >
-            Polityka prywatności
+            {tt('privacyPolicy')}
           </a>
         </motion.div>
       </div>

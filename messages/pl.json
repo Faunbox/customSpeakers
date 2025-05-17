@@ -76,14 +76,15 @@
     "qualityDesc": "Nasze obudowy są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji."
   },
   "Contact": {
-    "title": "Masz pytanie?",
+    "title": "Kontakt",
+    "subtitle": "Masz pytanie?",
     "name": "Imię",
     "email": "Adres email",
     "message": "Wiadomość",
     "send": "Wyślij",
     "info": "Informacje",
     "phone": "+48 790 616 496",
-    "address": "34-300, Żywiec, Polska"
+    "address": "Polska"
   },
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. Wszelkie prawa zastrzeżone.",
