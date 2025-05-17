@@ -3,12 +3,21 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-export const menuArray = ["Start", "O nas", "Oferta", "Galeria", "Historia", "Kontakt"];
+export const menuArray = [
+  { key: "home", href: "/" },
+  { key: "about", href: "#o-nas" },
+  { key: "offer", href: "#oferta" },
+  { key: "gallery", href: "#galeria" },
+  { key: "history", href: "#historia" },
+  { key: "contact", href: "#kontakt" }
+];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations('Navigation');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,13 +47,13 @@ const Navbar = () => {
           </a>
         </motion.div>
         <ul className="hidden md:flex space-x-6">
-          {menuArray.map((item) => (
-            <motion.li key={item} whileHover={{ scale: 1.1 }}>
+          {menuArray.map(({ key, href }) => (
+            <motion.li key={key} whileHover={{ scale: 1.1 }}>
               <a
-                href={`#${item.toLowerCase()}`}
+                href={href}
                 className="hover:text-purple-400 transition-colors"
               >
-                {item}
+                {t(key)}
               </a>
             </motion.li>
           ))}
@@ -71,18 +80,18 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <ul className="py-4 px-4 space-y-2">
-              {menuArray.map((item) => (
+              {menuArray.map(({ key, href }) => (
                 <motion.li
-                  key={item}
+                  key={key}
                   className="relative overflow-hidden"
                   whileHover={{ x: 10 }}
                 >
                   <a
-                    href={`#${item.toLowerCase()}`}
+                    href={href}
                     className="block py-2 hover:text-purple-400 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    {item}
+                    {t(key)}
                   </a>
                   <motion.div
                     className="absolute top-0 right-0 bottom-0 w-1 bg-purple-500"

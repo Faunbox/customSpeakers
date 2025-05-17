@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const galleryItems = [
   { id: 1, src: "/images/1.webp", alt: "Customowy system audio" },
@@ -20,6 +21,7 @@ const galleryItems = [
 ];
 
 const Gallery = () => {
+  const t = useTranslations('Gallery');
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   return (
@@ -32,7 +34,7 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Nasze prace
+          {t("title")}
         </motion.h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {galleryItems.map((item, index) => (

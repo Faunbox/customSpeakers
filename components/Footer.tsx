@@ -12,9 +12,11 @@ import {
 import Link from "next/link";
 import { menuArray } from "./Navbar";
 import { email, phone_number, whatsApp } from "./Contact";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations('Navigation');
 
   const socialLinks = [
     { Icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61575753504835" },
@@ -65,13 +67,13 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <ul className="flex flex-wrap justify-center md:justify-end space-x-6">
-              {menuArray.map((item) => (
-                <li key={item}>
+              {menuArray.map(({ key, href }) => (
+                <li key={key}>
                   <Link
-                    href={`#${item.toLowerCase()}`}
+                    href={href}
                     className="hover:text-purple-400 transition-colors duration-300"
                   >
-                    {item}
+                    {t(key)}
                   </Link>
                 </li>
               ))}

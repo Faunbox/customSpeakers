@@ -1,0 +1,92 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "offer": "Offer",
+    "gallery": "Gallery",
+    "history": "History",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "headline": "Your sound, your style",
+    "subheadline": "Custom speakers tailored to you",
+    "cta": "Learn more"
+  },
+  "About": {
+    "title": "About us",
+    "experience": "10 Years of Experience",
+    "description": "We are enthusiasts of sound and aesthetics who combine their knowledge and experience to deliver audio solutions tailored to the individual needs of our clients. Skills acquired over the years allow us to combine technical knowledge with a unique approach to design.",
+    "goal": "Our goal is to deliver custom enclosures that not only sound exceptional but also look like works of art, creating the perfect complement to your space. Our custom speakers are a guarantee of satisfaction."
+  },
+  "Offer": {
+    "title": "Offert",
+    "customSpeakers": {
+    "title": "Custom Speakers",
+    "description": "We create unique audio systems tailored to your needs and preferences, whether it’s for a living room, office, or bedroom. We consider the target environment, your current amplifier, and your sound preferences."
+  },
+  "crossoverDesign": {
+    "title": "Crossover Design",
+    "description": "Our experience and knowledge allow us to build crossovers that match your sonic preferences. This is the heart of the system, shaping the character, tone, and overall perception of the sound produced by the speakers."
+  },
+  "driverSelection": {
+    "title": "Driver Selection and Integration",
+    "description": "Based on the parameters of your current system, we help you choose the right drivers, layout, and configuration."
+  },
+  "cncServices": {
+    "title": "CNC Services",
+    "description": "Thanks to our CNC capabilities, we can handle even the most demanding projects, tailoring every detail to your expectations."
+  }
+  },
+  "Gallery": {
+    "title": "Our Works"
+  },
+  "OrderProcess": {
+    "title": "How to order?",
+    "steps": {
+      "consultation": {
+        "title": "Consultation",
+        "description": "First contact, where you describe your requirements."
+      },
+      "projectAndQuote": {
+        "title": "Custom project and quote",
+        "description": "After understanding the requirements, we create a 3D project for approval and a full quote."
+      },
+      "payment": {
+        "title": "Payment",
+        "description": "50% payment before production starts, 50% after receiving the finished system."
+      },
+      "production": {
+        "title": "Production",
+        "description": "After receiving the payment, we start the production process, which usually takes no longer than 2 weeks."
+      },
+      "shipping": {
+        "title": "Shipping",
+        "description": "Safe packaging and shipping of your system by courier or personal pickup at our company's headquarters, to which we cordially invite you!"
+      }
+    }
+  },
+  "History": {
+    "passion": "Passion",
+    "passionDesc": "Custom speakers - the idea was born out of a passion for music and technology.",
+    "mission": "Mission",
+    "missionDesc": "Our mission is to deliver custom speakers that fill your space with true sound, not devoid of emotion.",
+    "components": "Components",
+    "componentsDesc": "In our custom speakers, we use components from market leaders.",
+    "quality": "Quality",
+    "qualityDesc": "Our enclosures are entirely manufactured by us, which gives us full control over the production process."
+  },
+  "Contact": {
+    "title": "Have a question?",
+    "name": "Name",
+    "email": "Email address",
+    "message": "Message",
+    "send": "Send",
+    "info": "Information",
+    "phone": "+48 790 616 496",
+    "address": "34-300, Żywiec, Poland"
+  },
+  "Footer": {
+    "rights": "© 2025 MF Custom Speakers. All rights reserved.",
+    "privacyPolicy": "Privacy Policy"
+  }
+}

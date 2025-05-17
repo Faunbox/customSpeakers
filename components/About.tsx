@@ -1,11 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl';
 import Image from 'next/image'
 
 const About = () => {
+  const t = useTranslations('About');
   return (
-    <section id="o nas" className="py-20 bg-gray-800">
+    <section id="o-nas" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-bold text-center mb-12"
@@ -14,7 +16,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          O nas
+          {t('title')}
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -23,12 +25,12 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-4">10 Lat Doświadczenia</h3>
+            <h3 className="text-2xl font-semibold mb-4">{t('experience')}</h3>
             <p className="text-gray-300 mb-6">
-            Jesteśmy pasjonatami dźwięku i estetyki, którzy łączą swoją wiedzę i doświadczenie, żeby dostarczyć rozwiązania audio dopasowane do indywidualnych potrzeb naszych klientów. Umiejętności zdobyte przez lata pozwalają nam łączyć wiedzę techniczną z wyjątkowym podejściem do projektowania.
+            {t('description')}
             </p>
             <p className="text-gray-300">
-            Naszym celem jest dostarczanie obudowy na zamówienie, które nie tylko brzmią doskonale, ale także wyglądają jak dzieła sztuki, tworząc idealne dopełnienie Twojej przestrzeni. Nasze kolumny na zamówienie to gwarancja satysfakcji.
+            {t('goal')}
             </p>
           </motion.div>
           <motion.div

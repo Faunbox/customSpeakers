@@ -14,7 +14,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { useCookieConsent } from '@/app/contexts/CookieConsentContext'
+import { useCookieConsent } from '@/app/[locale]/contexts/CookieConsentContext'
 
 export function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false)

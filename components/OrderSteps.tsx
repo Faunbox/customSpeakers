@@ -8,45 +8,46 @@ import {
   Truck,
   Drill,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const steps = [
-  {
-    number: "1",
-    icon: MessageSquare,
-    title: "Konsultacja",
-    description: "Pierwszy kontakt, w którym opiszesz swoje wymagania.",
-  },
-  {
-    number: "2",
-    icon: Settings,
-    title: "Indywidualny projekt wraz z wyceną",
-    description:
-      "Po zapoznaniu się z wymaganiami, tworzymy projekt 3D do akceptacji oraz pełną wycenę.",
-  },
-  {
-    number: "3",
-    icon: DollarSign,
-    title: "Płatność",
-    description:
-      "Płatność 50% przed rozpoczęciem produkcji, 50% po otrzymaniu gotowego systemu.",
-  },
-  {
-    number: "4",
-    icon: Drill,
-    title: "Produkcja",
-    description:
-      "Po otrzymaniu wpłaty, rozpoczynamy proces produkcyjny, który trwa zwykle nie dłużej niż 2 tygodnie.",
-  },
-  {
-    number: "5",
-    icon: Truck,
-    title: "Wysyłka",
-    description:
-      "Bezpieczne pakowanie i wysyłka Twojego systemu kurierem lub odbiór osobisty w siedzibie naszej firmy do czego serdecznie zapraszamy!",
-  },
-];
+
 
 const OrderSteps = () => {
+  const t = useTranslations('OrderProcess');
+
+  const steps = [
+    {
+      number: "1",
+      icon: MessageSquare,
+      title: t("steps.consultation.title"),
+      description: t("steps.consultation.description")
+    },
+    {
+      number: "2",
+      icon: Settings,
+      title: t("steps.projectAndQuote.title"),
+      description: t("steps.projectAndQuote.description")
+    },
+    {
+      number: "3",
+      icon: DollarSign,
+      title: t("steps.payment.title"),
+      description: t("steps.payment.description")
+    },
+    {
+      number: "4",
+      icon: Drill,
+      title: t("steps.production.title"),
+      description: t("steps.production.description")
+    },
+    {
+      number: "5",
+      icon: Truck,
+      title: t("steps.shipping.title"),
+      description: t("steps.shipping.description")
+    }
+  ];
+
   return (
     <section id="order-steps" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
@@ -57,7 +58,7 @@ const OrderSteps = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Jak zamówić?
+          {t("title")}
         </motion.h2>
         <div className="relative">
           <div className="absolute left-12 top-0 bottom-0 w-0.5 bg-purple-500/30" />

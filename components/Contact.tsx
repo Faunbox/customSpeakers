@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { z } from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { sendContactEmail } from "@/app/actions/contactForm";
+import { sendContactEmail } from "@/app/[locale]/actions/contactForm";
 
 export const email = "kontakt@mfcustoms.pl";
 export const phone_number = "790 616 496";

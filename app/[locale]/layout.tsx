@@ -4,7 +4,10 @@ import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { CookieConsentProvider } from "./contexts/CookieConsentContext";
 import { CookieConsent } from "@/components/CookieConsent";
-import { GoogleTagManager } from "@next/third-parties/google"
+import { GoogleTagManager } from "@next/third-parties/google";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +29,7 @@ export const metadata: Metadata = {
     "projekt kolumn głośnikowych",
     "obudowy kolumn na zamówienie",
     "kolumny na zamówienie",
-    "kolumny na zamowienie"
+    "kolumny na zamowienie",
   ],
   authors: [{ name: "Filip Sojecki" }],
   creator: "Filip Sojecki",
@@ -88,14 +91,20 @@ export const metadata: Metadata = {
 //   tracesSampleRate: 1.0,
 // });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="pl">
-      
+    <html lang={locale}>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID as string} />
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
@@ -108,7 +117,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         <CookieConsentProvider>
-          {children}
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
           <CookieConsent />
         </CookieConsentProvider>
         <Toaster

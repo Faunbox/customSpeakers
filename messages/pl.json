@@ -1,0 +1,92 @@
+{
+  "Navigation": {
+    "home": "Start",
+    "about": "O nas",
+    "offer": "Oferta",
+    "gallery": "Galeria",
+    "history": "Historia",
+    "contact": "Kontakt"
+  },
+  "Hero": {
+    "headline": "Twoje brzmienie, Twój styl",
+    "subheadline": "Kolumny na zamówienie dopasowane do Ciebie",
+    "cta": "Dowiedz się więcej"
+  },
+  "About": {
+    "title": "O nas",
+    "experience": "10 Lat Doświadczenia",
+    "description": "Jesteśmy pasjonatami dźwięku i estetyki, którzy łączą swoją wiedzę i doświadczenie, żeby dostarczyć rozwiązania audio dopasowane do indywidualnych potrzeb naszych klientów. Umiejętności zdobyte przez lata pozwalają nam łączyć wiedzę techniczną z wyjątkowym podejściem do projektowania.",
+    "goal": "Naszym celem jest dostarczanie obudowy na zamówienie, które nie tylko brzmią doskonale, ale także wyglądają jak dzieła sztuki, tworząc idealne dopełnienie Twojej przestrzeni. Nasze kolumny na zamówienie to gwarancja satysfakcji."
+  },
+  "Offer": {
+    "title": "Oferta",
+    "customSpeakers": {
+    "title": "Kolumny na zamówienie",
+    "description": "Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe."
+  },
+  "crossoverDesign": {
+    "title": "Projektowanie zwrotnic",
+    "description": "Nasze doświadczenie i wiedza pozwalają nam wykonywać zwrotnice spełniające preferencje brzmieniowe Zamawiającego. Jest to serce systemu, nadające charakter, barwę i ogólny odbiór dźwięku generowanego przez kolumny."
+  },
+  "driverSelection": {
+    "title": "Dobór przetworników i ich aplikacja",
+    "description": "Znając parametry Twojego obecnego systemu, pomożemy dobrać głośniki, układ oraz ich konfigurację."
+  },
+  "cncServices": {
+    "title": "Usługi CNC",
+    "description": "Dzięki temu możemy realizować nawet najbardziej wymagające projekty, dostosowując każdy detal do Twoich oczekiwań."
+  }
+  },
+  "Gallery": {
+    "title": "Nasze prace"
+  },
+  "OrderProcess": {
+    "title": "Jak zamówić?",
+    "steps": {
+      "consultation": {
+        "title": "Konsultacja",
+        "description": "Pierwszy kontakt, w którym opiszesz swoje wymagania."
+      },
+      "projectAndQuote": {
+        "title": "Indywidualny projekt wraz z wyceną",
+        "description": "Po zapoznaniu się z wymaganiami, tworzymy projekt 3D do akceptacji oraz pełną wycenę."
+      },
+      "payment": {
+        "title": "Płatność",
+        "description": "Płatność 50% przed rozpoczęciem produkcji, 50% po otrzymaniu gotowego systemu."
+      },
+      "production": {
+        "title": "Produkcja",
+        "description": "Po otrzymaniu wpłaty, rozpoczynamy proces produkcyjny, który trwa zwykle nie dłużej niż 2 tygodnie."
+      },
+      "shipping": {
+        "title": "Wysyłka",
+        "description": "Bezpieczne pakowanie i wysyłka Twojego systemu kurierem lub odbiór osobisty w siedzibie naszej firmy do czego serdecznie zapraszamy!"
+      }
+    }
+  },
+  "History": {
+    "passion": "Pasja",
+    "passionDesc": "Kolumny na zamówienie - pomysł zrodził się z pasji do muzyki i technologii.",
+    "mission": "Misja",
+    "missionDesc": "Naszą misją jest dostarczenie kolumn na zamówienie, które wypełnią Twoje pomieszczenie dźwiękiem prawdziwym ale i nie pozbawionym emocji.",
+    "components": "Komponenty",
+    "componentsDesc": "W naszych kolumnach na zamówienie stosujemy komponenty liderów rynku.",
+    "quality": "Jakość",
+    "qualityDesc": "Nasze obudowy są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji."
+  },
+  "Contact": {
+    "title": "Masz pytanie?",
+    "name": "Imię",
+    "email": "Adres email",
+    "message": "Wiadomość",
+    "send": "Wyślij",
+    "info": "Informacje",
+    "phone": "+48 790 616 496",
+    "address": "34-300, Żywiec, Polska"
+  },
+  "Footer": {
+    "rights": "© 2025 MF Custom Speakers. Wszelkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności"
+  }
+}
