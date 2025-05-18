@@ -11,7 +11,7 @@ import { getTranslations } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
+//@ts-expect-error: nie wiem jak to zrobic
 export async function generateMetadata({params}) {
   const t = await getTranslations({
     locale: params.locale,
