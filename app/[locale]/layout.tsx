@@ -12,7 +12,7 @@ import { getTranslations } from "next-intl/server";
 const inter = Inter({ subsets: ["latin"] });
 
 
-export async function generateMetadata(params: { locale: string }) {
+export async function generateMetadata({params}) {
   const t = await getTranslations({
     locale: params.locale,
     namespace: "MetaTags",
