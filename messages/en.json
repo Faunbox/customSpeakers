@@ -1,4 +1,35 @@
 {
+  "MetaTags": {
+    "locale": "en",
+    "title": "MF Custom Speakers | Custom DIY Speaker Cabinets",
+    "desc": "We specialize in designing custom speaker cabinets for audiophiles and lovers of high-quality sound. We offer precise craftsmanship, modern design, and excellent acoustics thanks to the use of CNC machines and CAD projects. Our solutions combine technology with a passion for music, delivering a unique audio experience.",
+    "openGraph": {
+      "title": "MF Custom Speakers | Custom Speakers",
+      "description": "Custom speakers just for you! We specialize in creating speaker enclosures for audiophiles and sound lovers. We offer precise craftsmanship, modern design, and excellent acoustics thanks to the use of CNC machines and CAD projects. Our solutions combine technology with a passion for music, delivering a unique audio experience."
+    },
+    "twitter": {
+      "title": "MF Custom Speakers | Sound on Your Terms",
+      "description": "We create custom speakers for audiophiles and lovers of great sound. Precise craftsmanship, modern design, and top-quality audio. Discover how we can improve your sound system!"
+    },
+    "keywords": {
+      "key1": "speaker enclosures",
+      "key2": "custom audio systems",
+      "key3": "diy speaker boxes",
+      "key4": "hifi system",
+      "key5": "audiophile",
+      "key6": "speaker cabinets",
+      "key7": "loudspeaker boxes",
+      "key8": "diy speakers",
+      "key9": "speaker design",
+      "key10": "custom speaker design",
+      "key11": "speaker cabinet project",
+      "key12": "custom speaker enclosures",
+      "key13": "custom speakers",
+      "key14": "bespoke speakers"
+    },
+    "canonical": "https://www.mfcustoms.pl/en"
+  },
+
   "Navigation": {
     "home": "Home",
     "about": "About Us",
@@ -8,8 +39,8 @@
     "contact": "Contact"
   },
   "Hero": {
-    "headline": "Your sound, your style",
-    "subheadline": "Custom speakers tailored to you",
+    "headline": "Your sound, Your style",
+    "subheadline": "Custom speakers tailored to You",
     "cta": "Learn more"
   },
   "About": {
@@ -95,34 +126,40 @@
     "phone": "+48 790 616 496",
     "address": "Poland"
   },
+  "ContactForm": {
+    "namerequired": "Name is required",
+    "emailrequired": "Email address is required",
+    "emailisEmail": "Email address must be valid",
+    "descrequired": "The message must be at least 10 characters long",
+    "descmax": "The message must be less than 300 characters"
+  },
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. All rights reserved.",
     "privacyPolicy": "Privacy Policy"
   },
   "Cookie": {
-  "title": "We respect your privacy",
-  "message": "Our website uses cookies to enhance your browsing experience. By continuing to use our site, you consent to their use. You can find more information in our Privacy Policy.",
-  "settings": "Cookie settings",
-  "settingsConent": "Customize your cookie preferences. Some cookies are necessary for the website to function properly.",
-  "categories": {
-    "necessary": {
-      "title": "Necessary",
-      "description": "Required for the proper functioning of the website."
+    "title": "We respect your privacy",
+    "message": "Our website uses cookies to enhance your browsing experience. By continuing to use our site, you consent to their use. You can find more information in our Privacy Policy.",
+    "settings": "Cookie settings",
+    "settingsConent": "Customize your cookie preferences. Some cookies are necessary for the website to function properly.",
+    "categories": {
+      "necessary": {
+        "title": "Necessary",
+        "description": "Required for the proper functioning of the website."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "Helps us improve our website."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Ad personalization."
+      }
     },
-    "analytics": {
-      "title": "Analytics",
-      "description": "Helps us improve our website."
-    },
-    "marketing": {
-      "title": "Marketing",
-      "description": "Ad personalization."
-    }
-  },
-  "save": "Save",
-  "accept": "Accept all",
-  "decline": "Decline all",
-  "learnMore": "Learn more",
-  "policyLink": "/privacy-policy_en.pdf"
-}
-
+    "save": "Save",
+    "accept": "Accept all",
+    "decline": "Decline all",
+    "learnMore": "Learn more",
+    "policyLink": "/privacy-policy_en.pdf"
+  }
 }

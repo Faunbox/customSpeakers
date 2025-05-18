@@ -1,5 +1,4 @@
 import "./globals.css";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { CookieConsentProvider } from "./contexts/CookieConsentContext";
@@ -8,83 +7,93 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "MF Custom Speakers | Kolumny custom diy na zamówienie",
-  description:
-    "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe.",
-  keywords: [
-    "obudowy głośnikowe",
-    "customowe systemy audio",
-    "obudowy diy",
-    "system hifi",
-    "audiofil",
-    "obudowy kolumn",
-    "obudowy głośników",
-    "kolumny diy",
-    "projektowanie głośników",
-    "projektowanie kolumn",
-    "projekt kolumn głośnikowych",
-    "obudowy kolumn na zamówienie",
-    "kolumny na zamówienie",
-    "kolumny na zamowienie",
-  ],
-  authors: [{ name: "Filip Sojecki" }],
-  creator: "Filip Sojecki",
-  publisher: "Filip Sojecki",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  openGraph: {
-    title: "MF Custom Speakers | Kolumny na zamówienie",
+
+export async function generateMetadata(params: { locale: string }) {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "MetaTags",
+  });
+
+  return {
+    title: t("title"),
     description:
-      "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe.",
-    url: "https://www.mfcustoms.pl",
-    siteName: "Mf Custom Speakers",
-    images: [
-      {
-        url: "https://custom-speakers.vercel.app/images/1.jpg",
-        width: 1200,
-        height: 630,
-        alt: "MF Custom Speakers = Dzwięk na Twoich zasadach",
-      },
+      t("desc"),
+    keywords: [
+      t('keywords.key1'),
+      t('keywords.key2'),
+      t('keywords.key3'),
+      t('keywords.key4'),
+      t('keywords.key5'),
+      t('keywords.key6'),
+      t('keywords.key7'),
+      t('keywords.key8'),
+      t('keywords.key9'),
+      t('keywords.key10'),
+      t('keywords.key11'),
+      t('keywords.key12'),
+      t('keywords.key13'),
+      t('keywords.key14')
     ],
-    locale: "pl",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "MF Custom Speakers | Dzwięk na Twoich zasadach",
-    description:
-      "Tworzymy kolumny na zamówienie dla audiofilów i miłośników dobrego dzwięku. Precyzyjne wykonanie, nowoczesny design i najwyższa jakość dźwięku. Sprawdź, jak możemy poprawić brzmienie Twojego systemu audio!",
-    images: ["https://custom-speakers.vercel.app/images/1.jpg"],
-    creator: "Filip_Sojecki",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    authors: [{ name: "Filip Sojecki" }],
+    creator: "Filip Sojecki",
+    publisher: "Filip Sojecki",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    openGraph: {
+      title: t("openGraph.title"),
+      description:
+        t("openGraph.description"),
+      url: t("canonical"),
+      siteName: t("title"),
+      images: [
+        {
+          url: "https://mfcustoms.pl/images/1.jpg",
+          width: 1200,
+          height: 630,
+          alt: "MF Custom Speakers = Dzwięk na Twoich zasadach",
+        },
+      ],
+      locale: t("locale"),
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("twitter.title"),
+      description:
+        t("twitter.description"),
+      images: ["https://mfcustoms.pl/images/1.jpg"],
+      creator: "Filip_Sojecki",
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-96x96.png",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: "/site.webmanifest",
-  alternates: {
-    canonical: "https://www.mfcustoms.pl",
-  },
-};
+    icons: {
+      icon: "/favicon.ico",
+      shortcut: "/favicon-96x96.png",
+      apple: "/apple-touch-icon.png",
+    },
+    manifest: "/site.webmanifest",
+    alternates: {
+      canonical: t("canonical"),
+    },
+  };
+}
+
 
 // Sentry.init({
 //   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,

@@ -1,4 +1,34 @@
 {
+  "MetaTags": {
+    "locale": "pl",
+    "title": "MF Custom Speakers | Kolumny custom diy na zamówienie",
+    "desc": "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe.",
+    "openGraph": {
+      "title": "MF Custom Speakers | Kolumny na zamówienie",
+      "description": "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe."
+    },
+    "twitter": {
+      "title": "MF Custom Speakers | Dzwięk na Twoich zasadach",
+      "description": "Tworzymy kolumny na zamówienie dla audiofilów i miłośników dobrego dzwięku. Precyzyjne wykonanie, nowoczesny design i najwyższa jakość dźwięku. Sprawdź, jak możemy poprawić brzmienie Twojego systemu audio!"
+    },
+    "keywords": {
+      "key1": "obudowy głośnikowe",
+      "key2": "customowe systemy audio",
+      "key3": "obudowy diy",
+      "key4": "system hifi",
+      "key5": "audiofil",
+      "key6": "obudowy kolumn",
+      "key7": "obudowy głośników",
+      "key8": "kolumny diy",
+      "key9": "projektowanie głośników",
+      "key10": "projektowanie kolumn",
+      "key11": "projekt kolumn głośnikowych",
+      "key12": "obudowy kolumn na zamówienie",
+      "key13": "kolumny na zamówienie",
+      "key14": "kolumny na zamowienie"
+    },
+    "canonical": "https://www.mfcustoms.pl"
+  },
   "Navigation": {
     "home": "Start",
     "about": "O nas",
@@ -95,6 +125,13 @@
     "info": "Informacje",
     "phone": "+48 790 616 496",
     "address": "Polska"
+  },
+  "ContactForm": {
+    "namerequired": "Imie jest wymagane",
+    "emailrequired": "Adres email jest wymagany",
+    "emailisEmail": "Adres email musi być poprawny",
+    "descrequired": "Wiadomość musi posiadać minimum 10 znaków",
+    "descmax": "Wiadomość musi posiadać mniej niż 300 znaków"
   },
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. Wszelkie prawa zastrzeżone.",

@@ -19,21 +19,9 @@ export type ResponseData = {
   message?: string;
 };
 
-const validationSchema = z.object({
-  name: z.string().min(3, { message: "Imie jest wymagane" }),
-  email: z
-  .string()
-  .min(1, { message: "Adres email jest wymagany" })
-  .email({ message: "Adres email musi być poprawny" }),
-  description: z
-  .string()
-  .min(10, { message: "Wiadomość musi posiadać minimum 10 znaków" })
-  .max(300, { message: "Wiadomość musi posiadać mniej niż 300 znaków" }),
-});
-type ValidationSchema = z.infer<typeof validationSchema>;
-
 const Contact = () => {
-  const t = useTranslations('Contact');
+  const t = useTranslations("Contact");
+  const tt = useTranslations("ContactForm")
   const [response, setResponse] = useState<ResponseData>({
     status: "",
     message: "",
@@ -41,6 +29,20 @@ const Contact = () => {
   const [disabled, setDisabled] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   // const { pending } = useFormStatus();
+
+  const validationSchema = z.object({
+    name: z.string().min(3, { message: tt("namerequired") }),
+    email: z
+      .string()
+      .min(1, { message: tt("emailrequired") })
+      .email({ message: tt("emailisEmail") }),
+    description: z
+      .string()
+      .min(10, { message: tt("descrequired") })
+      .max(300, { message: tt("descmax") }),
+  });
+  type ValidationSchema = z.infer<typeof validationSchema>;
+
   const {
     register,
     handleSubmit,
@@ -48,7 +50,7 @@ const Contact = () => {
   } = useForm<ValidationSchema>({
     resolver: zodResolver(validationSchema),
   });
-  
+
   async function onSend(data: ValidationSchema) {
     try {
       setIsSubmitting(true);
@@ -72,12 +74,11 @@ const Contact = () => {
       setDisabled(true);
     }
   }
-  
+
   const onSubmit: SubmitHandler<ValidationSchema> = async (
     data: ValidationSchema
   ) => await onSend(data);
-  
-  
+
   return (
     <section id="kontakt" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
@@ -88,7 +89,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {t('title')}
+          {t("title")}
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12">
           <motion.div
@@ -97,17 +98,16 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-6">{t('subtitle')}</h3>
+            <h3 className="text-2xl font-semibold mb-6">{t("subtitle")}</h3>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block mb-2">
-                  {t('name')}
+                  {t("name")}
                 </label>
                 <input
                   type="text"
                   id="name"
                   {...register("name")}
-                  required
                   className="w-full px-4 py-2 rounded bg-gray-700 text-white"
                 />
                 {errors.name && (
@@ -118,13 +118,12 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block mb-2">
-                  {t('email')}
+                  {t("email")}
                 </label>
                 <input
                   type="email"
                   id="email"
                   {...register("email")}
-                  required
                   className="w-full px-4 py-2 rounded bg-gray-700 text-white"
                 />
                 {errors.email && (
@@ -135,12 +134,11 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="description" className="block mb-2">
-                  {t('message')}
+                  {t("message")}
                 </label>
                 <textarea
                   id="description"
                   {...register("description")}
-                  required
                   rows={4}
                   className="w-full px-4 py-2 rounded bg-gray-700 text-white"
                 ></textarea>
@@ -155,7 +153,7 @@ const Contact = () => {
                 disabled={isSubmitting || disabled}
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition-colors duration-300"
               >
-                {isSubmitting ? "Wysyłanie..." : `${t('send')}`}
+                {isSubmitting ? "Wysyłanie..." : `${t("send")}`}
               </button>
             </form>
           </motion.div>
@@ -165,7 +163,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-6">{t('info')}</h3>
+            <h3 className="text-2xl font-semibold mb-6">{t("info")}</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-purple-500 mr-4" />
@@ -193,7 +191,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-purple-500 mr-4" />
                 <div>
                   <p>34-300, Żywiec</p>
-                  <p>{t('address')}</p>
+                  <p>{t("address")}</p>
                 </div>
               </div>
             </div>

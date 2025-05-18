@@ -34,7 +34,7 @@ const TextWall = () => {
   return (
     <section id="historia" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-purple-900 opacity-50" />
-      <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=800')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-cover bg-center opacity-10" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.h2
           className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
