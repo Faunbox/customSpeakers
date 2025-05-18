@@ -18,6 +18,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const t = useTranslations('Navigation');
   const tt = useTranslations('Footer');
+  const ttt = useTranslations('Cookie');
 
   const socialLinks = [
     { Icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61575753504835" },
@@ -89,7 +90,7 @@ const Footer = () => {
         >
           <p>&copy; {currentYear} MF Custom Speakers. All rights reserved.</p>
           <a
-            href="/privacy-policy.pdf"
+            href={ttt('policyLink')}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-purple-400 transition-colors duration-300"

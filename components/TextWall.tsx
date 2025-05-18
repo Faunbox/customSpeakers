@@ -3,36 +3,33 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Volume2, Music, Mic, Radio } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const TextWall = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-
+  const t = useTranslations('History');
   const paragraphs = [
     {
       icon: <Volume2 className="w-8 h-8 text-purple-500" />,
-      title: "Pasja",
-      content:
-        "Kolumny na zamówienie - pomysł zrodził się z pasji do muzyki i technologii. MF Customs jest owocem wieloletniej dedykacji do uzyskania naturalnego i angażującego dzwięku oraz chęci dostarczenia efektu sonicznego w ciekawej i nieszablonowej formie.",
+      title: t("passion.title"),
+      content: t("passion.content")
     },
     {
       icon: <Music className="w-8 h-8 text-purple-500" />,
-      title: "Misja",
-      content:
-        "Naszą misją jest dostarczenie kolumny na zamówienie, które wypełnią Twoje pomieszczenie dzwiękiem prawdziwym ale i nie pozbawionym emocji. Oprócz dźwięku jest również forma wizualna - piękne i niepowtarzalne obudowy głośnikowe. Jakość i przywiązanie do detali - to nasze motto.",
+      title: t("mission.title"),
+      content: t("mission.content")
     },
     {
       icon: <Mic className="w-8 h-8 text-purple-500" />,
-      title: "Komponenty",
-      content:
-        "W naszych kolumnach na zamówienie stosujemy komponenty liderów rynku. Przetworniki pochodzą od producentów zapewniających stałe i powtarzalne  parametry oraz najwyższą jakość wykonania. Przebieramy w modelach stawiając na te, które potrafią przedstawić muzykę jak najwierniej i dopiero z nich te, które nie zapominają o ekspresji i emocji.",
+      title: t("components.title"),
+      content: t("components.content")
     },
     {
       icon: <Radio className="w-8 h-8 text-purple-500" />,
-      title: "Jakość",
-      content:
-        "Nasze obudowy na są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji. Stosujemy materiały najwyższej jakości. Dzięki maszynom cnc, mamy pewność że cięcia będą wykonane z dużą dokładnością i powtarzalnością. Zawsze dbamy o optymalizację obudowy pod kątem jej sztywności, fal stojących, dyfrakcji na ostrych krawędziach, wytłumienia i rozmieszczenia głośników.",
-    },
-  ]
+      title: t("quality.title"),
+      content: t("quality.content")
+    }
+  ];
 
   return (
     <section id="historia" className="py-20 relative overflow-hidden">
@@ -46,7 +43,7 @@ const TextWall = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Nasza historia
+          {t("title")}
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-12">
           {paragraphs.map((paragraph, index) => (

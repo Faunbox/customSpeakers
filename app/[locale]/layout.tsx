@@ -116,10 +116,12 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <CookieConsentProvider>
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
-          <CookieConsent />
-        </CookieConsentProvider>
+        <NextIntlClientProvider>
+          <CookieConsentProvider>
+            {children}
+            <CookieConsent />
+          </CookieConsentProvider>
+        </NextIntlClientProvider>
         <Toaster
           position="bottom-right"
           toastOptions={{

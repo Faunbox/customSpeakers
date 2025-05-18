@@ -66,14 +66,23 @@
     }
   },
   "History": {
-    "passion": "Passion",
-    "passionDesc": "Custom speakers - the idea was born out of a passion for music and technology.",
-    "mission": "Mission",
-    "missionDesc": "Our mission is to deliver custom speakers that fill your space with true sound, not devoid of emotion.",
-    "components": "Components",
-    "componentsDesc": "In our custom speakers, we use components from market leaders.",
-    "quality": "Quality",
-    "qualityDesc": "Our enclosures are entirely manufactured by us, which gives us full control over the production process."
+    "title": "Our history",
+    "passion": {
+      "title": "Passion",
+      "content": "Custom speakers – the idea was born from a passion for music and technology. MF Customs is the result of years of dedication to achieving natural and engaging sound, and the desire to deliver a sonic effect in an interesting and unconventional form."
+    },
+    "mission": {
+      "title": "Mission",
+      "content": "Our mission is to deliver custom speakers that fill your space with sound that is both true and full of emotion. Beyond the sound itself, there's also visual form – beautiful and unique speaker enclosures. Quality and attention to detail – that’s our motto."
+    },
+    "components": {
+      "title": "Components",
+      "content": "In our custom speakers, we use components from market leaders. The drivers come from manufacturers who ensure consistent and repeatable performance as well as the highest build quality. We carefully select models that reproduce music with the highest fidelity – and among them, those that still retain emotion and expression."
+    },
+    "quality": {
+      "title": "Quality",
+      "content": "Our enclosures are entirely handcrafted by us, giving us full control over the production process. We use only the highest quality materials. Thanks to CNC machines, we ensure precision and repeatability in every cut. We always optimize the enclosures in terms of stiffness, standing waves, diffraction on sharp edges, damping, and speaker placement."
+    }
   },
   "Contact": {
     "title": "Contact",
@@ -89,5 +98,31 @@
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. All rights reserved.",
     "privacyPolicy": "Privacy Policy"
-  }
+  },
+  "Cookie": {
+  "title": "We respect your privacy",
+  "message": "Our website uses cookies to enhance your browsing experience. By continuing to use our site, you consent to their use. You can find more information in our Privacy Policy.",
+  "settings": "Cookie settings",
+  "settingsConent": "Customize your cookie preferences. Some cookies are necessary for the website to function properly.",
+  "categories": {
+    "necessary": {
+      "title": "Necessary",
+      "description": "Required for the proper functioning of the website."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Helps us improve our website."
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Ad personalization."
+    }
+  },
+  "save": "Save",
+  "accept": "Accept all",
+  "decline": "Decline all",
+  "learnMore": "Learn more",
+  "policyLink": "/privacy-policy_en.pdf"
+}
+
 }

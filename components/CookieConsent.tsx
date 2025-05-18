@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { X } from 'lucide-react'
-import { Switch } from "@/components/ui/switch"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -13,40 +13,48 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import { useCookieConsent } from '@/app/[locale]/contexts/CookieConsentContext'
+} from "@/components/ui/dialog";
+import { useCookieConsent } from "@/app/[locale]/contexts/CookieConsentContext";
+import { useTranslations } from "next-intl";
 
 export function CookieConsent() {
-  const [showBanner, setShowBanner] = useState(false)
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
-  const { cookieSettings, updateCookieSettings, acceptAllCookies, rejectAllCookies } = useCookieConsent()
+  const [showBanner, setShowBanner] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const {
+    cookieSettings,
+    updateCookieSettings,
+    acceptAllCookies,
+    rejectAllCookies,
+  } = useCookieConsent();
 
   useEffect(() => {
     // Check if user has already made their choice
-    const hasChoice = localStorage.getItem('cookieChoiceMade')
+    const hasChoice = localStorage.getItem("cookieChoiceMade");
     if (!hasChoice) {
-      setShowBanner(true)
+      setShowBanner(true);
     }
-  }, [])
+  }, []);
 
   const handleAcceptAll = () => {
-    acceptAllCookies()
-    setShowBanner(false)
-    localStorage.setItem('cookieChoiceMade', 'true')
-  }
+    acceptAllCookies();
+    setShowBanner(false);
+    localStorage.setItem("cookieChoiceMade", "true");
+  };
 
   const handleRejectAll = () => {
-    rejectAllCookies()
-    setShowBanner(false)
-    localStorage.setItem('cookieChoiceMade', 'true')
-  }
+    rejectAllCookies();
+    setShowBanner(false);
+    localStorage.setItem("cookieChoiceMade", "true");
+  };
 
   const handleSavePreferences = () => {
-    updateCookieSettings(cookieSettings)
-    setShowBanner(false)
-    setIsDialogOpen(false)
-    localStorage.setItem('cookieChoiceMade', 'true')
-  }
+    updateCookieSettings(cookieSettings);
+    setShowBanner(false);
+    setIsDialogOpen(false);
+    localStorage.setItem("cookieChoiceMade", "true");
+  };
+
+  const t = useTranslations("Cookie");
 
   return (
     <>
@@ -61,41 +69,42 @@ export function CookieConsent() {
             <div className="container mx-auto">
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                 <div className="flex-1">
-                  <h2 className="text-lg font-semibold mb-2 text-purple-500">Szanujemy Twoją prywatność</h2>
-                  <p className="text-sm text-gray-300">
-                  Nasza strona korzysta z plików cookie w celu zapewnienia jej prawidłowego działania, personalizacji treści oraz analizy ruchu. Korzystając z niej, wyrażasz zgodę na ich użycie. Więcej informacji znajdziesz w Polityce prywatności
-                  </p>
+                  <h2 className="text-lg font-semibold mb-2 text-purple-500">
+                    {t("title")}
+                  </h2>
+                  <p className="text-sm text-gray-300">{t("message")}</p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 min-w-fit">
                   <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                     <DialogTrigger asChild>
-                      <Button>Ustawienia cookie</Button>
+                      <Button>{t("settings")}</Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                       <DialogHeader>
-                        <DialogTitle>Ustawienia cookie</DialogTitle>
+                        <DialogTitle>{t("settings")}</DialogTitle>
                         <DialogDescription>
-                        Dostosuj swoje preferencje dotyczące plików cookie. Niektóre pliki cookie są niezbędne do prawidłowego działania strony internetowej.
+                          {t("settingsConent")}
                         </DialogDescription>
                       </DialogHeader>
                       <div className="grid gap-4 py-4">
                         <div className="flex items-center justify-between">
                           <div className="space-y-0.5">
-                            <label className="text-sm font-medium">Niezbędne</label>
+                            <label className="text-sm font-medium">
+                              {t("categories.necessary.title")}
+                            </label>
                             <p className="text-xs text-muted-foreground">
-                            Niezbędne do prawidłowego działania strony internetowej.
+                              {t("categories.necessary.description")}
                             </p>
                           </div>
-                          <Switch
-                            checked={cookieSettings.necessary}
-                            disabled
-                          />
+                          <Switch checked={cookieSettings.necessary} disabled />
                         </div>
                         <div className="flex items-center justify-between">
                           <div className="space-y-0.5">
-                            <label className="text-sm font-medium">Analityka</label>
+                            <label className="text-sm font-medium">
+                              {t("categories.analytics.title")}
+                            </label>
                             <p className="text-xs text-muted-foreground">
-                              Pomaga ulepszać naszą stronę.
+                              {t("categories.analytics.description")}
                             </p>
                           </div>
                           <Switch
@@ -107,9 +116,11 @@ export function CookieConsent() {
                         </div>
                         <div className="flex items-center justify-between">
                           <div className="space-y-0.5">
-                            <label className="text-sm font-medium">Marketing</label>
+                            <label className="text-sm font-medium">
+                              {t("categories.marketing.title")}
+                            </label>
                             <p className="text-xs text-muted-foreground">
-                              Personalizacja reklam
+                              {t("categories.marketing.description")}
                             </p>
                           </div>
                           <Switch
@@ -121,17 +132,13 @@ export function CookieConsent() {
                         </div>
                       </div>
                       <DialogFooter>
-                        <Button onClick={handleSavePreferences}>
-                          Zapisz
-                        </Button>
+                        <Button onClick={handleSavePreferences}>{t("save")}</Button>
                       </DialogFooter>
                     </DialogContent>
                   </Dialog>
-                  <Button onClick={handleRejectAll}>
-                    Odrzuć wszystko
-                  </Button>
+                  <Button onClick={handleRejectAll}>{t("decline")}</Button>
                   <Button variant="outline" onClick={handleAcceptAll}>
-                    Zaakceptuj wszystkie
+                    {t("accept")}
                   </Button>
                 </div>
               </div>
@@ -153,6 +160,5 @@ export function CookieConsent() {
         </motion.button>
       )}
     </>
-  )
+  );
 }
-

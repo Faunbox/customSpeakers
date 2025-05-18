@@ -21,21 +21,21 @@
   "Offer": {
     "title": "Oferta",
     "customSpeakers": {
-    "title": "Kolumny na zamówienie",
-    "description": "Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe."
-  },
-  "crossoverDesign": {
-    "title": "Projektowanie zwrotnic",
-    "description": "Nasze doświadczenie i wiedza pozwalają nam wykonywać zwrotnice spełniające preferencje brzmieniowe Zamawiającego. Jest to serce systemu, nadające charakter, barwę i ogólny odbiór dźwięku generowanego przez kolumny."
-  },
-  "driverSelection": {
-    "title": "Dobór przetworników i ich aplikacja",
-    "description": "Znając parametry Twojego obecnego systemu, pomożemy dobrać głośniki, układ oraz ich konfigurację."
-  },
-  "cncServices": {
-    "title": "Usługi CNC",
-    "description": "Dzięki temu możemy realizować nawet najbardziej wymagające projekty, dostosowując każdy detal do Twoich oczekiwań."
-  }
+      "title": "Kolumny na zamówienie",
+      "description": "Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe."
+    },
+    "crossoverDesign": {
+      "title": "Projektowanie zwrotnic",
+      "description": "Nasze doświadczenie i wiedza pozwalają nam wykonywać zwrotnice spełniające preferencje brzmieniowe Zamawiającego. Jest to serce systemu, nadające charakter, barwę i ogólny odbiór dźwięku generowanego przez kolumny."
+    },
+    "driverSelection": {
+      "title": "Dobór przetworników i ich aplikacja",
+      "description": "Znając parametry Twojego obecnego systemu, pomożemy dobrać głośniki, układ oraz ich konfigurację."
+    },
+    "cncServices": {
+      "title": "Usługi CNC",
+      "description": "Dzięki temu możemy realizować nawet najbardziej wymagające projekty, dostosowując każdy detal do Twoich oczekiwań."
+    }
   },
   "Gallery": {
     "title": "Nasze prace"
@@ -66,15 +66,25 @@
     }
   },
   "History": {
-    "passion": "Pasja",
-    "passionDesc": "Kolumny na zamówienie - pomysł zrodził się z pasji do muzyki i technologii.",
-    "mission": "Misja",
-    "missionDesc": "Naszą misją jest dostarczenie kolumn na zamówienie, które wypełnią Twoje pomieszczenie dźwiękiem prawdziwym ale i nie pozbawionym emocji.",
-    "components": "Komponenty",
-    "componentsDesc": "W naszych kolumnach na zamówienie stosujemy komponenty liderów rynku.",
-    "quality": "Jakość",
-    "qualityDesc": "Nasze obudowy są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji."
+    "title": "Nasza historia",
+    "passion": {
+      "title": "Pasja",
+      "content": "Kolumny na zamówienie - pomysł zrodził się z pasji do muzyki i technologii. MF Customs jest owocem wieloletniej dedykacji do uzyskania naturalnego i angażującego dźwięku oraz chęci dostarczenia efektu sonicznego w ciekawej i nieszablonowej formie."
+    },
+    "mission": {
+      "title": "Misja",
+      "content": "Naszą misją jest dostarczenie kolumny na zamówienie, które wypełnią Twoje pomieszczenie dźwiękiem prawdziwym, ale i niepozbawionym emocji. Oprócz dźwięku jest również forma wizualna – piękne i niepowtarzalne obudowy głośnikowe. Jakość i przywiązanie do detali – to nasze motto."
+    },
+    "components": {
+      "title": "Komponenty",
+      "content": "W naszych kolumnach na zamówienie stosujemy komponenty liderów rynku. Przetworniki pochodzą od producentów zapewniających stałe i powtarzalne parametry oraz najwyższą jakość wykonania. Przebieramy w modelach, stawiając na te, które potrafią przedstawić muzykę jak najwierniej, i dopiero z nich te, które nie zapominają o ekspresji i emocji."
+    },
+    "quality": {
+      "title": "Jakość",
+      "content": "Nasze obudowy są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji. Stosujemy materiały najwyższej jakości. Dzięki maszynom CNC mamy pewność, że cięcia będą wykonane z dużą dokładnością i powtarzalnością. Zawsze dbamy o optymalizację obudowy pod kątem jej sztywności, fal stojących, dyfrakcji na ostrych krawędziach, wytłumienia i rozmieszczenia głośników."
+    }
   },
+
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Masz pytanie?",
@@ -89,5 +99,31 @@
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności"
+  },
+
+  "Cookie": {
+    "title": "Szanujemy Twoją prywatność",
+    "message": "Nasza strona korzysta z plików cookies w celu poprawy komfortu użytkowania. Korzystając z naszej strony, wyrażasz zgodę na ich użycie. Więcej informacji znajdziesz w Polityce prywatności.",
+    "settings": "Ustawienia cookie",
+    "settingsConent": "Dostosuj swoje preferencje dotyczące plików cookie. Niektóre pliki cookie są niezbędne do prawidłowego działania strony internetowej.",
+    "categories": {
+      "necessary": {
+        "title": "Niezbędne",
+        "description": "Niezbędne do prawidłowego działania strony internetowej."
+      },
+      "analytics": {
+        "title": "Analityka",
+        "description": "Pomaga ulepszać naszą stronę."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Personalizacja reklam."
+      }
+    },
+    "save": "Zapisz",
+    "accept": "Zaakceptuj wszystkie",
+    "decline": "Odrzuć wszystko",
+    "learnMore": "Dowiedz się więcej",
+    "policyLink": "/privacy-policy.pdf"
   }
 }
