@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 const Hero = () => {
-const t = useTranslations('Hero');
+  const t = useTranslations("Hero");
 
   return (
     <section
@@ -16,8 +16,11 @@ const t = useTranslations('Hero');
         loop
         muted
         playsInline
+        preload="none"
+        poster="poster.jpg"
         className="absolute inset-0 w-full h-full object-cover"
       >
+        <source src="/gramofon.webm" type="video/webm" />
         <source src="/gramofon.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -29,7 +32,7 @@ const t = useTranslations('Hero');
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {t('headline')}
+          {t("headline")}
         </motion.h2>
         <motion.p
           className="text-xl md:text-2xl text-center mb-8"
@@ -37,7 +40,7 @@ const t = useTranslations('Hero');
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          {t('subheadline')}
+          {t("subheadline")}
         </motion.p>
         <motion.div
           className="flex justify-center"
@@ -49,7 +52,7 @@ const t = useTranslations('Hero');
             href="#oferta"
             className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
           >
-            {t('cta')}
+            {t("cta")}
           </a>
         </motion.div>
       </div>
