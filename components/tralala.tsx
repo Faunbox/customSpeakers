@@ -15,7 +15,7 @@ export const menuArray = [
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [language, setLanguage] = useState("ENG")
+  const [language, setLanguage] = useState("PL")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,8 +27,6 @@ const Navbar = () => {
 
   const toggleLanguage = (lang: string) => {
     setLanguage(lang)
-    // Here you would typically implement language switching logic
-    // For example, updating content or redirecting to a localized version
   }
 
   return (
