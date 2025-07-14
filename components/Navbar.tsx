@@ -149,8 +149,8 @@ const Navbar = () => {
               {/* Language selector in mobile menu */}
               <motion.li className="pt-4 border-t border-gray-800">
                 <div className="flex items-center justify-center space-x-4">
-                  <Link
-                    href={"/en"}
+                  <button
+                onClick={() => router.replace("/en")}
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "en"
                         ? "bg-purple-500 text-white"
@@ -158,9 +158,9 @@ const Navbar = () => {
                     } transition-colors`}
                   >
                     English
-                  </Link>
-                  <Link
-                    href="/pl"
+                  </button>
+                  <button
+                onClick={() => router.replace("/pl")}
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "pl"
                         ? "bg-purple-500 text-white"
@@ -168,7 +168,7 @@ const Navbar = () => {
                     } transition-colors`}
                   >
                     Polski
-                  </Link>
+                  </button>
                 </div>
               </motion.li>
             </ul>
