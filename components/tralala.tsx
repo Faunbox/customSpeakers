@@ -29,8 +29,9 @@ const Navbar = () => {
   }, []);
 
   const toggleLanguage = (lang: string) => {
-    setLanguage(lang);
-    router.reload()
+    const lng = lang==="en"?"pl":"en"
+    setLanguage(lng);
+    router.push(`/${lng}`)
   };
 
   return (
@@ -60,18 +61,16 @@ const Navbar = () => {
             transition={{ delay: 0.5 }}
           >
             {/* <Link hrefLang="pl" href={"/pl"}> */}
-              <motion.button
+              <button
                 className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
                   language === "pl"
                     ? "bg-purple-600 text-white"
                     : "text-gray-400 hover:text-white"
                 }`}
                 onClick={() => toggleLanguage("pl")}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
               >
                 PL
-              </motion.button>
+              </button>
             {/* </Link> */}
             {/* <Link hrefLang="en" href={"/en"}> */}
               <motion.button
