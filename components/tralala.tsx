@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { Volume2 } from "lucide-react"
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Volume2 } from "lucide-react";
 import Link from "next/link";
 
 export const menuArray = [
@@ -11,24 +11,24 @@ export const menuArray = [
   { key: "offer", href: "#oferta" },
   { key: "gallery", href: "#galeria" },
   { key: "history", href: "#historia" },
-  { key: "contact", href: "#kontakt" }
+  { key: "contact", href: "#kontakt" },
 ];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [language, setLanguage] = useState("pl")
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [language, setLanguage] = useState("pl");
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleLanguage = (lang: string) => {
-    setLanguage(lang)
-  }
+    setLanguage(lang);
+  };
 
   return (
     <motion.nav
@@ -41,7 +41,10 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
+          <motion.div
+            className="flex items-center space-x-2"
+            whileHover={{ scale: 1.05 }}
+          >
             <Volume2 className="w-8 h-8 text-purple-500" />
             <span className="text-xl font-bold">CustomSpeakers</span>
           </motion.div>
@@ -53,38 +56,44 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <motion.button
-              className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
-                language === "pl" ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
-              }`}
-              onClick={() => toggleLanguage("PL")}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link hrefLang="pl" href={"/pl"}>
-
-              PL
-              </Link>
-            </motion.button>
-            <motion.button
-              className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
-                language === "en" ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
-              }`}
-              onClick={() => toggleLanguage("ENG")}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link hrefLang="en" href={"/en"}>
-              ENG
-              </Link>
-            </motion.button>
+            <Link hrefLang="pl" href={"/pl"}>
+              <motion.button
+                className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
+                  language === "pl"
+                    ? "bg-purple-600 text-white"
+                    : "text-gray-400 hover:text-white"
+                }`}
+                onClick={() => toggleLanguage("PL")}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                PL
+              </motion.button>
+            </Link>
+            <Link hrefLang="en" href={"/en"}>
+              <motion.button
+                className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
+                  language === "en"
+                    ? "bg-purple-600 text-white"
+                    : "text-gray-400 hover:text-white"
+                }`}
+                onClick={() => toggleLanguage("ENG")}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                ENG
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
 
         <ul className="flex space-x-6">
           {["Home", "About", "Services", "Contact"].map((item) => (
             <motion.li key={item} whileHover={{ scale: 1.1 }}>
-              <a href={`#${item.toLowerCase()}`} className="hover:text-purple-400 transition-colors">
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="hover:text-purple-400 transition-colors"
+              >
                 {item}
               </a>
             </motion.li>
@@ -92,7 +101,7 @@ const Navbar = () => {
         </ul>
       </div>
     </motion.nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
