@@ -70,7 +70,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
             >
               <Link
-                href={"en"}
+                href={"/en"}
                 hrefLang="en"
                 className={`text-sm font-medium px-2 py-1 rounded ${
                   language === "en"
@@ -81,7 +81,7 @@ const Navbar = () => {
                 ENG
               </Link>
               <Link
-                href={"pl"}
+                href={"/pl"}
                 hrefLang="pl"
                 className={`text-sm font-medium px-2 py-1 rounded ${
                   language === "pl"
