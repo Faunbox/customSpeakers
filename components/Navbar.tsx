@@ -26,9 +26,12 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 20);
     };
     const currentPath = window.location.pathname;
-    if (currentPath === "/en") {
-      setLanguage("en");
-    }
+    if (currentPath.startsWith("/en")) {
+  setLanguage("en");
+} else {
+  setLanguage("pl");
+}
+    
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
