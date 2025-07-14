@@ -15,7 +15,7 @@ export const menuArray = [
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [language, setLanguage] = useState("PL")
+  const [language, setLanguage] = useState("pl")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +54,7 @@ const Navbar = () => {
           >
             <motion.button
               className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
-                language === "PL" ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
+                language === "pl" ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
               }`}
               onClick={() => toggleLanguage("PL")}
               whileHover={{ scale: 1.05 }}
@@ -64,7 +64,7 @@ const Navbar = () => {
             </motion.button>
             <motion.button
               className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
-                language === "ENG" ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
+                language === "en" ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
               }`}
               onClick={() => toggleLanguage("ENG")}
               whileHover={{ scale: 1.05 }}
