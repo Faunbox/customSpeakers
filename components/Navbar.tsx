@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
-// import { redirect } from "next/navigation";
 import Link from "next/link";
 
 export const menuArray = [
@@ -35,11 +34,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const toggleLanguage = (lang: string) => {
-  //   setLanguage(lang)
-  //   redirect(language)
-  // }
-
   return (
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 ${
@@ -69,14 +63,13 @@ const Navbar = () => {
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.05 }}
             >
-              <Link
-                href={"/en"}
-                hrefLang="en"
+              <Link href={"/en"} hrefLang="en"
                 className={`text-sm font-medium px-2 py-1 rounded ${
                   language === "en"
                     ? "bg-purple-500 text-white"
                     : "border border-purple-500 hover:bg-purple-500/20"
                 } transition-colors`}
+
               >
                 ENG
               </Link>
@@ -154,10 +147,10 @@ const Navbar = () => {
               <motion.li className="pt-4 border-t border-gray-800">
                 <div className="flex items-center justify-center space-x-4">
                   <Link
-                    href={"en"}
-                    // onClick={() => toggleLanguage("en")}
+                    href={"/en"}
+                    hrefLang="en"
                     className={`text-sm font-medium px-3 py-1 rounded ${
-                      language === "eng"
+                      language === "en"
                         ? "bg-purple-500 text-white"
                         : "border border-purple-500 hover:bg-purple-500/20"
                     } transition-colors`}
@@ -165,8 +158,8 @@ const Navbar = () => {
                     English
                   </Link>
                   <Link
-                    // onClick={() => toggleLanguage("pl")}
-                    href="pl"
+                    href="/pl"
+                    hrefLang="pl"
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "pl"
                         ? "bg-purple-500 text-white"
