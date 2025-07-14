@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Volume2 } from "lucide-react";
-import Link from "next/link";
+// import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const menuArray = [
   { key: "home", href: "/" },
@@ -17,6 +18,7 @@ export const menuArray = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [language, setLanguage] = useState("pl");
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +30,7 @@ const Navbar = () => {
 
   const toggleLanguage = (lang: string) => {
     setLanguage(lang);
+    router.reload()
   };
 
   return (
@@ -56,34 +59,34 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <Link hrefLang="pl" href={"/pl"}>
+            {/* <Link hrefLang="pl" href={"/pl"}> */}
               <motion.button
                 className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
                   language === "pl"
                     ? "bg-purple-600 text-white"
                     : "text-gray-400 hover:text-white"
                 }`}
-                onClick={() => toggleLanguage("PL")}
+                onClick={() => toggleLanguage("pl")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 PL
               </motion.button>
-            </Link>
-            <Link hrefLang="en" href={"/en"}>
+            {/* </Link> */}
+            {/* <Link hrefLang="en" href={"/en"}> */}
               <motion.button
                 className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
                   language === "en"
                     ? "bg-purple-600 text-white"
                     : "text-gray-400 hover:text-white"
                 }`}
-                onClick={() => toggleLanguage("ENG")}
+                onClick={() => toggleLanguage("en")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 ENG
               </motion.button>
-            </Link>
+            {/* </Link> */}
           </motion.div>
         </div>
 
