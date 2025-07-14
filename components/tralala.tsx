@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Volume2 } from "lucide-react"
+import Link from "next/link";
 
 export const menuArray = [
   { key: "home", href: "/" },
@@ -60,7 +61,10 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              <Link hrefLang="pl" href={"/pl"}>
+
               PL
+              </Link>
             </motion.button>
             <motion.button
               className={`px-2 py-1 rounded-md text-sm font-medium transition-colors ${
@@ -70,7 +74,9 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              <Link hrefLang="en" href={"/en"}>
               ENG
+              </Link>
             </motion.button>
           </motion.div>
         </div>
