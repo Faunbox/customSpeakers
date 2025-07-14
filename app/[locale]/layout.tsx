@@ -13,8 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 //@ts-expect-error: nie wiem jak to zrobic
 export async function generateMetadata({ params }) {
-  const param = await params
-  const lang = param.lang
+  const { lang } = await params
   const t = await getTranslations({
     
     locale: lang,

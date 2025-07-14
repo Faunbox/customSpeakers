@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const menuArray = [
   { key: "home", href: "/" },
@@ -20,6 +21,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [language, setLanguage] = useState("pl");
   const t = useTranslations("Navigation");
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,11 +29,10 @@ const Navbar = () => {
     };
     const currentPath = window.location.pathname;
     if (currentPath.startsWith("/en")) {
-  setLanguage("en");
-} else {
-  setLanguage("pl");
-}
-    
+      setLanguage("en");
+    } else {
+      setLanguage("pl");
+    }
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -66,19 +67,18 @@ const Navbar = () => {
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.05 }}
             >
-              <Link href={"/en"} hrefLang="en"
+              <button
+                onClick={() => router.push("/en")}
                 className={`text-sm font-medium px-2 py-1 rounded ${
                   language === "en"
                     ? "bg-purple-500 text-white"
                     : "border border-purple-500 hover:bg-purple-500/20"
                 } transition-colors`}
-
               >
                 ENG
-              </Link>
-              <Link
-                href={"/pl"}
-                hrefLang="pl"
+              </button>
+              <button
+                onClick={() => router.push("/pl")}
                 className={`text-sm font-medium px-2 py-1 rounded ${
                   language === "pl"
                     ? "bg-purple-500 text-white"
@@ -86,7 +86,7 @@ const Navbar = () => {
                 } transition-colors`}
               >
                 PL
-              </Link>
+              </button>
             </motion.div>
           </div>
 
@@ -151,7 +151,6 @@ const Navbar = () => {
                 <div className="flex items-center justify-center space-x-4">
                   <Link
                     href={"/en"}
-                    hrefLang="en"
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "en"
                         ? "bg-purple-500 text-white"
@@ -162,7 +161,6 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href="/pl"
-                    hrefLang="pl"
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "pl"
                         ? "bg-purple-500 text-white"
