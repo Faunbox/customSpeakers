@@ -2,10 +2,10 @@
   "MetaTags": {
     "locale": "pl",
     "title": "MF Custom Speakers | Kolumny custom diy na zamówienie",
-    "desc": "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe.",
+    "desc": "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Nasze obudowy kolumn na zamówienie to gwarancja satysfakcji.",
     "openGraph": {
       "title": "MF Custom Speakers | Kolumny na zamówienie",
-      "description": "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe."
+      "description": "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Nasze obudowy kolumn na zamówienie to gwarancja satysfakcji."
     },
     "twitter": {
       "title": "MF Custom Speakers | Dzwięk na Twoich zasadach",
@@ -15,7 +15,7 @@
       "key1": "obudowy głośnikowe",
       "key2": "customowe systemy audio",
       "key3": "obudowy diy",
-      "key4": "system hifi",
+      "key4": "Obudowy kolumn na zamówienie",
       "key5": "audiofil",
       "key6": "obudowy kolumn",
       "key7": "obudowy głośników",
@@ -24,7 +24,7 @@
       "key10": "projektowanie kolumn",
       "key11": "projekt kolumn głośnikowych",
       "key12": "obudowy kolumn na zamówienie",
-      "key13": "kolumny na zamówienie",
+      "key13": "Głośniki na zamówienie",
       "key14": "kolumny na zamowienie"
     },
     "canonical": "https://www.mfcustoms.pl"
@@ -52,7 +52,7 @@
     "title": "Oferta",
     "customSpeakers": {
       "title": "Kolumny na zamówienie",
-      "description": "Tworzymy unikalne systemy audio dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe."
+      "description": "Tworzymy unikalne obudowy kolumny na zamówienie dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe."
     },
     "crossoverDesign": {
       "title": "Projektowanie zwrotnic",
@@ -64,7 +64,7 @@
     },
     "cncServices": {
       "title": "Usługi CNC",
-      "description": "Dzięki temu możemy realizować nawet najbardziej wymagające projekty, dostosowując każdy detal do Twoich oczekiwań."
+      "description": "Dzięki temu możemy realizować nawet najbardziej wymagające projekty, dostosowując każdy detal do Twoich oczekiwań. Obróbka CNC pozwala nam na precyzyjne cięcie, frezowanie i wiercenie materiałów, co zapewnia doskonałą jakość wykonania i powtarzalność produkcji."
     }
   },
   "Gallery": {
@@ -78,7 +78,7 @@
         "description": "Pierwszy kontakt, w którym opiszesz swoje wymagania."
       },
       "projectAndQuote": {
-        "title": "Indywidualny projekt wraz z wyceną",
+        "title": "Indywidualny projekt kolumn wraz z wyceną",
         "description": "Po zapoznaniu się z wymaganiami, tworzymy projekt 3D do akceptacji oraz pełną wycenę."
       },
       "payment": {
@@ -111,7 +111,7 @@
     },
     "quality": {
       "title": "Jakość",
-      "content": "Nasze obudowy są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji. Stosujemy materiały najwyższej jakości. Dzięki maszynom CNC mamy pewność, że cięcia będą wykonane z dużą dokładnością i powtarzalnością. Zawsze dbamy o optymalizację obudowy pod kątem jej sztywności, fal stojących, dyfrakcji na ostrych krawędziach, wytłumienia i rozmieszczenia głośników."
+      "content": "Nasze obudowy kolumn są w całości wytwarzane przez nas, dzięki czemu mamy pełną kontrolę nad procesem produkcji. Stosujemy materiały najwyższej jakości. Dzięki maszynom CNC mamy pewność, że cięcia będą wykonane z dużą dokładnością i powtarzalnością. Zawsze dbamy o optymalizację obudowy pod kątem jej sztywności, fal stojących, dyfrakcji na ostrych krawędziach, wytłumienia i rozmieszczenia głośników."
     }
   },
 
@@ -124,7 +124,11 @@
     "send": "Wyślij",
     "info": "Informacje",
     "phone": "+48 790 616 496",
-    "address": "Polska"
+    "address": "Polska",
+    "howToTravel": "Jak dojechać?",
+    "travelText": "Sprawdź naszą lokalizację na mapie i skorzystaj z Google Maps, aby znaleźć najlepszą trasę do naszego showroomu oraz zapoznać się z opiniami naszych klientów.",
+    "travelButton": "Sprawdź trasę"
+
   },
   "ContactForm": {
     "namerequired": "Imie jest wymagane",

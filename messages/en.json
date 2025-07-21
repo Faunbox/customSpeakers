@@ -124,7 +124,11 @@
     "send": "Send",
     "info": "Information",
     "phone": "+48 790 616 496",
-    "address": "Poland"
+    "address": "Poland",
+    "howToTravel": "How to travel?",
+    "travelText": "Check our location on the map and use Google Maps to find the best route to our showroom and read reviews from our customers.",
+    "travelButton": "Open in Google Maps"
+
   },
   "ContactForm": {
     "namerequired": "Name is required",
