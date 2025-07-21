@@ -211,7 +211,7 @@ const Contact = () => {
               </div>
               <motion.div className="mt-6" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <a
-                  href="hhttps://maps.app.goo.gl/jh17kgQGS7PsrJ917"
+                  href="https://maps.app.goo.gl/jh17kgQGS7PsrJ917"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-purple-500/25"
