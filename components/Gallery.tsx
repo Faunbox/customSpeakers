@@ -6,18 +6,15 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const galleryItems = [
-  { id: 12, src: "/images/4.webp", alt: "Customowy system audio" },
-  { id: 13, src: "/images/1.webp", alt: "Customowy system audio" },
-  { id: 11, src: "/images/11.webp", alt: "Kolumny na zamówienie" },
-  { id: 2, src: "/images/2.webp", alt: "glosnik diy" },
-  { id: 3, src: "/images/3.webp", alt: "kolumny diy" },
-  { id: 4, src: "/images/2.webp", alt: "glosnik custom" },
-  { id: 5, src: "/images/5.webp", alt: "system audio diy" },
-  { id: 6, src: "/images/6.webp", alt: "Kolumny na zamówienie" },
-  { id: 7, src: "/images/7.webp", alt: "Customowy system audio" },
-  { id: 8, src: "/images/3.jpeg", alt: "Kolumny na zamówienie" },
-  { id: 9, src: "/images/9.webp", alt: "Obudowy na zamówienie" },
-  { id: 10, src: "/images/10.webp", alt: "Customowy system audio" },
+  { id: 1, src: "/images/4.webp", alt: "obudowy kolumn na zamówienie" },
+  { id: 2, src: "/images/1.webp", alt: "Customowy system audio" },
+  { id: 3, src: "/images/11.webp", alt: "Kolumny na zamówienie" },
+  { id: 4, src: "/images/2.webp", alt: "glosnik diy" },
+  { id: 5, src: "/images/3.webp", alt: "kolumny diy" },
+  { id: 6, src: "/images/5.webp", alt: "system audio diy" },
+  { id: 7, src: "/images/6.webp", alt: "Kolumny na zamówienie" },
+  { id: 8, src: "/images/7.webp", alt: "głośniki na zamówienie" },
+  { id: 9, src: "/images/9.webp", alt: "głośniki na zamówienie" },
 ];
 
 const Gallery = () => {
