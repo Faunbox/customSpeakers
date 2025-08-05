@@ -21,7 +21,7 @@ export type ResponseData = {
 
 const Contact = () => {
   const t = useTranslations("Contact");
-  const tt = useTranslations("ContactForm")
+  const tt = useTranslations("ContactForm");
   const [response, setResponse] = useState<ResponseData>({
     status: "",
     message: "",
@@ -59,10 +59,9 @@ const Contact = () => {
         formData.append(key, JSON.stringify(value));
       });
       const res = await sendContactEmail(formData);
-      console.log(res.response);
       setResponse({
-        status: res.response.status,
-        message: res.response.message,
+        status: res.status,
+        message: res.message,
       });
     } catch {
       alert("Błąd podczas wysyłania formularza");
@@ -202,14 +201,17 @@ const Contact = () => {
               viewport={{ once: true }}
               className="mt-8"
             >
-              <h4 className="text-xl font-semibold mb-4 text-purple-300">{t("howToTravel")}</h4>
+              <h4 className="text-xl font-semibold mb-4 text-purple-300">
+                {t("howToTravel")}
+              </h4>
               <div className="space-y-3 text-gray-300">
-                <p>
-                  {t("travelText")}
-                </p>
-                
+                <p>{t("travelText")}</p>
               </div>
-              <motion.div className="mt-6" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <motion.div
+                className="mt-6"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
                 <a
                   href="https://maps.app.goo.gl/jh17kgQGS7PsrJ917"
                   target="_blank"
@@ -220,10 +222,8 @@ const Contact = () => {
                   {t("travelButton")}
                 </a>
               </motion.div>
-          
+            </motion.div>
           </motion.div>
-          </motion.div>
-          
         </div>
       </div>
     </section>
