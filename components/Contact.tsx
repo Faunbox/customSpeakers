@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, MessageSquareMore } from "lucide-react";
+import { Phone, Mail, MapPin, MessageSquareMore, Info } from "lucide-react";
 import toast from "react-hot-toast";
 import { z } from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -192,6 +192,10 @@ const Contact = () => {
                   <p>34-330, Trzebinia</p>
                   <p>{t("address")}</p>
                 </div>
+              </div>
+              <div className="flex items-center">
+                <Info className="w-6 h-6 text-purple-500 mr-4" />
+                <p>{t("nip")}</p>
               </div>
             </div>
             <motion.div
