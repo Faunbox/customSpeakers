@@ -8,7 +8,7 @@ export default function CustomDesignsPage() {
       <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
         <div className="text-center space-y-6 px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white">
-            Custom Designs
+            Custom cabinets designs
           </h1>
           <div className="w-24 h-1 bg-purple-500 mx-auto"></div>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
