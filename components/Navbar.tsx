@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Volume2, Menu, X } from "lucide-react";
+import { Volume2, Menu, X, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
@@ -10,6 +10,14 @@ export const menuArray = [
   { key: "home", href: "/" },
   { key: "about", href: "#o-nas" },
   { key: "offer", href: "#oferta" },
+  {
+    key: "diy",
+    href: "#",
+    dropdown: [
+      { key: "troels-kits", href: "/diy/troels-gravesen-kits" },
+      { key: "custom-designs", href: "/diy/custom-designs" },
+    ],
+  },
   { key: "gallery", href: "#galeria" },
   { key: "history", href: "#historia" },
   { key: "contact", href: "#kontakt" },
@@ -18,6 +26,7 @@ export const menuArray = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [language, setLanguage] = useState("pl");
   const t = useTranslations("Navigation");
   const router = useRouter();
@@ -36,6 +45,14 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleDropdown = (key: string) => {
+    setOpenDropdown(openDropdown === key ? null : key);
+  };
+
+  const closeDropdown = () => {
+    setOpenDropdown(null);
+  };
 
   return (
     <motion.nav
@@ -89,18 +106,67 @@ const Navbar = () => {
             </motion.div>
           </div>
 
-          <ul className="hidden lg:flex space-x-6">
-            {menuArray.map(({ key, href }) => (
-              <motion.li key={key} whileHover={{ scale: 1.1 }}>
-                <a
-                  href={href}
-                  className="hover:text-purple-400 transition-colors"
+          {/* Desktop menu container */}
+          <div className="hidden lg:flex space-x-6" onClick={closeDropdown}>
+            <ul className="flex space-x-6">
+              {menuArray.map(({ key, href, dropdown }) => (
+                <motion.li
+                  key={key}
+                  className="relative"
+                  whileHover={{ scale: 1.1 }}
                 >
-                  {t(key)}
-                </a>
-              </motion.li>
-            ))}
-          </ul>
+                  {dropdown ? (
+                    <div className="relative">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleDropdown(key);
+                        }}
+                        className="flex items-center space-x-1 hover:text-purple-400 transition-colors"
+                      >
+                        <span>{t(key)}</span>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform ${
+                            openDropdown === key ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      <AnimatePresence>
+                        {openDropdown === key && (
+                          <motion.div
+                            className="absolute top-full left-0 mt-2 bg-gray-900 border border-gray-700 rounded-lg shadow-lg min-w-[180px]"
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.2 }}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            {dropdown.map(({ key: subKey, href: subHref }) => (
+                              <a
+                                key={subKey}
+                                href={subHref}
+                                className="block px-4 py-2 hover:bg-gray-800 hover:text-purple-400 transition-colors first:rounded-t-lg last:rounded-b-lg"
+                                onClick={closeDropdown}
+                              >
+                                {t(subKey)}
+                              </a>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <a
+                      href={href}
+                      className="hover:text-purple-400 transition-colors"
+                    >
+                      {t(key)}
+                    </a>
+                  )}
+                </motion.li>
+              ))}
+            </ul>
+          </div>
           <button
             className="lg:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -124,19 +190,63 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <ul className="py-4 px-4 space-y-2">
-              {menuArray.map(({ key, href }) => (
+              {menuArray.map(({ key, href, dropdown }) => (
                 <motion.li
                   key={key}
                   className="relative overflow-hidden"
                   whileHover={{ x: 10 }}
                 >
-                  <a
-                    href={href}
-                    className="block py-2 hover:text-purple-400 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t(key)}
-                  </a>
+                  {dropdown ? (
+                    <div>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleDropdown(key);
+                        }}
+                        className="flex items-center justify-between w-full py-2 hover:text-purple-400 transition-colors"
+                      >
+                        <span>{t(key)}</span>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform ${
+                            openDropdown === key ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      <AnimatePresence>
+                        {openDropdown === key && (
+                          <motion.div
+                            className="ml-4 mt-2 space-y-2"
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            {dropdown.map(({ key: subKey, href: subHref }) => (
+                              <a
+                                key={subKey}
+                                href={subHref}
+                                className="block py-1 pl-4 text-gray-300 hover:text-purple-400 transition-colors border-l border-gray-700"
+                                onClick={() => {
+                                  setOpenDropdown(null);
+                                  setIsMobileMenuOpen(false);
+                                }}
+                              >
+                                {t(subKey)}
+                              </a>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <a
+                      href={href}
+                      className="block py-2 hover:text-purple-400 transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {t(key)}
+                    </a>
+                  )}
                   <motion.div
                     className="absolute top-0 right-0 bottom-0 w-1 bg-purple-500"
                     initial={{ x: 10 }}
@@ -149,7 +259,7 @@ const Navbar = () => {
               <motion.li className="pt-4 border-t border-gray-800">
                 <div className="flex items-center justify-center space-x-4">
                   <button
-                onClick={() => router.replace("/en")}
+                    onClick={() => router.replace("/en")}
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "en"
                         ? "bg-purple-500 text-white"
@@ -159,7 +269,7 @@ const Navbar = () => {
                     English
                   </button>
                   <button
-                onClick={() => router.replace("/pl")}
+                    onClick={() => router.replace("/pl")}
                     className={`text-sm font-medium px-3 py-1 rounded ${
                       language === "pl"
                         ? "bg-purple-500 text-white"

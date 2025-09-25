@@ -35,6 +35,9 @@
     "offer": "Oferta",
     "gallery": "Galeria",
     "history": "Historia",
+    "diy": "DIY",
+    "troels-kits": "Obudowy do zestawów Troels Gravesen",
+    "custom-designs": "Obudowy kolumn na zamówienie",
     "contact": "Kontakt"
   },
   "Hero": {
@@ -129,7 +132,6 @@
     "howToTravel": "Jak dojechać?",
     "travelText": "Sprawdź naszą lokalizację na mapie i skorzystaj z Google Maps, aby znaleźć najlepszą trasę do naszego showroomu oraz zapoznać się z opiniami naszych klientów.",
     "travelButton": "Sprawdź trasę"
-
   },
   "ContactForm": {
     "namerequired": "Imie jest wymagane",
