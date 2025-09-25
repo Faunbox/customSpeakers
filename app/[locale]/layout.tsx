@@ -54,10 +54,10 @@ export async function generateMetadata({ params }) {
       siteName: t("title"),
       images: [
         {
-          url: "https://mfcustoms.pl/images/11.webp",
+          url: "https://mfcustoms.pl/images/12.webp",
           width: 1200,
           height: 630,
-          alt: "MF Custom Speakers = Dzwięk na Twoich zasadach",
+          alt: "MF Custom Speakers - obudowy kolumn na zamówienie",
         },
       ],
       locale: t("locale"),
