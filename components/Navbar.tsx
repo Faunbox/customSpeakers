@@ -4,7 +4,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, Menu, X, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter as nextRouter } from "next/navigation";
+import {useRouter} from '@/i18n/navigation';
+import {Link} from '@/i18n/navigation'
+// import Link from "next/link";
 
 export const menuArray = [
   { key: "home", href: "/" },
@@ -30,6 +33,7 @@ const Navbar = () => {
   const [language, setLanguage] = useState("pl");
   const t = useTranslations("Navigation");
   const router = useRouter();
+  const next_router = nextRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,7 +98,7 @@ const Navbar = () => {
                 ENG
               </button>
               <button
-                onClick={() => router.push("/pl")}
+                onClick={() => next_router.push("/pl")}
                 className={`text-sm font-medium px-2 py-1 rounded ${
                   language === "pl"
                     ? "bg-purple-500 text-white"
@@ -142,26 +146,26 @@ const Navbar = () => {
                             onClick={(e) => e.stopPropagation()}
                           >
                             {dropdown.map(({ key: subKey, href: subHref }) => (
-                              <a
+                              <Link
                                 key={subKey}
                                 href={subHref}
                                 className="block px-4 py-2 hover:bg-gray-800 hover:text-purple-400 transition-colors first:rounded-t-lg last:rounded-b-lg"
                                 onClick={closeDropdown}
                               >
                                 {t(subKey)}
-                              </a>
+                              </Link>
                             ))}
                           </motion.div>
                         )}
                       </AnimatePresence>
                     </div>
                   ) : (
-                    <a
+                    <Link
                       href={href}
                       className="hover:text-purple-400 transition-colors"
                     >
                       {t(key)}
-                    </a>
+                    </Link>
                   )}
                 </motion.li>
               ))}

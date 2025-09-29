@@ -168,5 +168,59 @@
     "decline": "Decline all",
     "learnMore": "Learn more",
     "policyLink": "/privacy-policy_en.pdf"
+  },
+
+  "Troels_hero": {
+    "h1": "Speaker Cabinets",
+    "desc": "Bring Troels Gravesen’s world-famous designs to life with our precision-crafted speaker enclosures. Built with CNC accuracy, premium materials, and decades of experience, our cabinets unlock the full potential of Jantzen Audio DIY Kits and deliver the authentic sound signature envisioned by Troels.",
+    "button": "Get Your Custom Quote"
+  },
+  "Troels_texwtwall": {
+    "main_title": "The Art of Acoustic Excellence",
+    "desc": "Discover the world of high-fidelity audio through precision craftsmanship and acoustic engineering. Each enclosure we build reflects a balance of technology, experience, and passion for music.",
+    "title1": "Troels Gravesen’s Legacy",
+    "section1": "Troels Gravesen is one of the most recognized figures in the DIY audio world. His projects have inspired enthusiasts of outstanding sound for years, combining acoustic precision with musicality. By working with us, you can bring his concepts to life in the form of professionally crafted speaker enclosures.",
+    "button1": "Visit Troels Gravesen's website",
+    "title2": "Precision Cabinet Construction",
+    "section2": "The cabinet is the foundation of every loudspeaker system. We use CNC technology, advanced woodworking methods, and proven materials to reproduce design requirements with the highest accuracy. Our enclosures provide structural stability, minimize unwanted resonances, and guarantee the full potential of the drivers.",
+    "title3": "Recommended by Jantzen Audio",
+    "section3": "Our speaker enclosures are recommended by Jantzen Audio – a renowned manufacturer of DIY Kits. We design cabinets to perfectly match each model, preserving the full acoustic intentions of Troels Gravesen. Even when clients require significant design modifications, we adapt the project to ensure consistency and achieve the highest sound quality.",
+    "button2": "Visit Jantzen Audio website",
+    "section4": "Our enclosures not only meet strict acoustic standards but also impress with their appearance. We offer a wide range of finishes – from natural veneers, through high-gloss lacquers, to modern matte surfaces. This way, the speakers become not just a tool for playing music, but also an elegant element of your interior.",
+    "title4": "Where Acoustics Meets Aesthetics",
+    "section5": "We build enclosures for the most popular Troels Gravesen projects, such as Discovery, Ekta, Ekta Grande, Faital 3WC, The Loudspeaker, ATS, and many others. Each model is crafted according to the author’s specifications to preserve its tonal character and musicality.",
+    "title5": "Available Troels Gravesen Models",
+    "section6": "Our enclosures are created for the most demanding clients – both individuals and audio equipment manufacturers. Thanks to years of experience, reliability, and the highest production standards, we are trusted by brands from Switzerland, the USA, and many other countries.",
+    "title6": "Experience and Trusted by worldbrand brands"
+  },
+  "Troels_why": {
+    "title": "Why MF Customs?",
+    "point1": "Over 10 years of experience in speaker enclosure production.",
+    "point2": "Precision craftsmanship thanks to CNC technology and CAD designs.",
+    "point3": "Jantzen Audio recommendation for our enclosures.",
+    "point4": "Timely delivery and full compliance with design specifications.",
+    "point5": "Individual approach – possibility to modify Troels Gravesen’s designs to meet client requirements.",
+    "point6": "Wide range of aesthetic finishes: veneers, high-gloss lacquer, matte surfaces."
+  },
+  "Troels_faq": {
+    "title": "FAQ",
+    "q1": "What materials do you use for the cabinets?",
+    "a1": "We work with high-quality MDF, birch plywood, and solid wood. Each material is selected for its acoustic properties and durability.",
+    "q2": "Can I request custom dimensions or modifications?",
+    "a2": "Yes. Even if your project requires significant changes, we adapt the cabinet design while keeping the original acoustic principles intact.",
+    "q3": "Do you offer finishing options?",
+    "a3": "We provide multiple finishes – natural veneers, matte coatings, and high-gloss lacquers – so the enclosure matches both your sound system and your interior.",
+    "q4": "How long does production take?",
+    "a4": "Depending on complexity, standard lead time is 4–8 weeks after pre-payment. Larger or highly customized projects may take longer.",
+    "q5": "Do you ship internationally?",
+    "a5": "Yes, we ship worldwide. Our cabinets are safely packed to prevent any transport damage.",
+    "q6": "Do you work with audio manufacturers as well as individuals?",
+    "a6": "Absolutely. We produce enclosures both for private DIY enthusiasts and for professional audio brands under OEM agreements."
+  },
+  "Troels_contact": {
+    "title": "Ready to Build Your Dream Speakers?",
+    "desc": "Get in touch for a custom quote and let's bring your Troels Gravesen design to life with precision-crafted cabinets.",
+    "button_email": "Send Us an Email",
+    "button_whatsapp": "Chat on WhatsApp"
   }
 }

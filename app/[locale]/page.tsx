@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+// import HorizontalGallery from "@/components/New_gallery";
 import OrderSteps from "@/components/OrderSteps";
 import Services from "@/components/Services";
 import TextWall from "@/components/TextWall";
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Services />
       <Gallery />
+      {/* <HorizontalGallery /> */}
       <OrderSteps />
       <TextWall />
       <Contact />

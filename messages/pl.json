@@ -169,5 +169,59 @@
     "decline": "Odrzuć wszystko",
     "learnMore": "Dowiedz się więcej",
     "policyLink": "/privacy-policy.pdf"
+  },
+
+  "Troels_hero": {
+    "h1": "Obudowy kolumn na zamówienie",
+    "desc": "Przekuj swoje marzenia w rzeczywistość dzięki perfekcyjnie wykonanym obudowom do projektów Troelsa Gravesena. Tworzymy idealne podstawy dla zestawów DIY Kit Jantzen Audio – z dbałością o każdy detal.",
+    "button": "Skontaktuj się z nami"
+  },
+  "Troels_texwtwall": {
+    "main_title": "Sztuka Akustycznej Doskonałości",
+    "desc": "Odkryj świat audio dzięki precyzyjnemu rzemiosłu i inżynierii akustycznej, które łączą technologię z pasją do muzyki.",
+    "title1": "Dziedzictwo Troelsa Gravesena",
+    "section1": "Troels Gravesen to jedna z najbardziej rozpoznawalnych postaci w świecie DIY audio. Jego projekty od lat inspirują miłośników doskonałego brzmienia, łącząc precyzję akustyczną z muzykalnością. Dzięki współpracy z nami możesz urzeczywistnić jego koncepcje w formie profesjonalnie wykonanych obudów głośnikowych.",
+    "button1": "Zobacz stronę Troelsa Gravesena",
+    "title2": "Precyzyjna konstrukcja obudów",
+    "section2": "Obudowa to fundament każdego systemu głośnikowego. Korzystamy z technologii CNC, zaawansowanych metod stolarskich i sprawdzonych materiałów, aby odwzorować wymagania projektowe z najwyższą dokładnością. Nasze obudowy zapewniają stabilność konstrukcji, minimalizują niepożądane rezonanse i gwarantują pełne wykorzystanie potencjału przetworników.",
+    "title3": "Rekomendacja Jantzen Audio",
+    "section3": "Nasze obudowy głośnikowe posiadają rekomendację Jantzen Audio – renomowanego producenta zestawów DIY Kit. Tworzymy konstrukcje tak, aby ich komponenty idealnie współgrały z danym modelem obudowy, zachowując pełnię założeń akustycznych Troelsa Gravesena. Nawet jeśli klient wymaga mocnych modyfikacji koncepcji, dopasowujemy projekt tak, aby całość była spójna i gotowa do uzyskania najwyższej jakości brzmienia.",
+    "button2": "Zobacz stronę Jantzen Audio",
+    "section4": "Nasze obudowy nie tylko spełniają rygorystyczne wymogi akustyczne, ale także zachwycają wyglądem. Oferujemy różnorodne opcje wykończeń – od naturalnych fornirów, przez malowanie na wysoki połysk, aż po nowoczesne matowe powierzchnie. Dzięki temu kolumny stają się nie tylko narzędziem do odtwarzania muzyki, ale również eleganckim elementem wnętrza.",
+    "title4": "Akustyka spotyka estetykę",
+    "section5": "Wykonujemy obudowy do najpopularniejszych projektów Troelsa Gravesena, takich jak Discovery, Ekta, Ekta Grande, Faital 3WC, The Loudspeaker, ATS i wiele innych. Każdy model powstaje zgodnie ze specyfikacją autora, aby zachować charakter brzmienia i pełnię muzykalności.",
+    "title5": "Dostępne modele Troels Gravesen",
+    "section6": "Nasze obudowy powstają z myślą o najbardziej wymagających klientach – zarówno indywidualnych, jak i producentach sprzętu audio. Dzięki wieloletniemu doświadczeniu, terminowości i najwyższej jakości wykonania zaufały nam marki ze Szwajcarii, Holandii, USA i wielu innych krajów.",
+    "title6": "Doświadczenie i zaufanie marek"
+  },
+  "Troels_why": {
+    "title": "Dlaczego my?",
+    "point1":"Ponad 10 lat doświadczenia w produkcji obudów głośnikowych.",
+    "point2":"Precyzja wykonania dzięki technologii CNC i projektom CAD.",
+    "point3":"Rekomendacja Jantzen Audio dla naszych obudów.",
+    "point4":"Terminowość i pełna zgodność z założeniami projektowymi.",
+    "point5":"Indywidualne podejście – możliwość modyfikacji projektów Troelsa Gravesena pod wymagania klienta.",
+    "point6":"Szeroki wybór wykończeń estetycznych: forniry, lakier na wysoki połysk, powierzchnie matowe."
+  },
+  "Troels_faq": {
+    "title": "Najczęściej zadawane pytania",
+    "q1": "Jakie materiały wykorzystujecie do produkcji obudów?",
+    "a1": "Stosujemy MDF, sklejkę brzozową oraz lite drewno. Na życzenie klienta wykonujemy także obudowy z egzotycznych fornirów i specjalnych materiałów konstrukcyjnych.",
+    "q2": "Czy mogę wprowadzić zmiany do projektu Troelsa Gravesena?",
+    "a2": "Tak, istnieje możliwość modyfikacji – zarówno pod kątem wymiarów, jak i wyglądu. Dbamy jednak, by zachować właściwości akustyczne zgodne z założeniami projektowymi.",
+    "q3": "Czy wykonujecie obudowy tylko pod zestawy Jantzen Audio?",
+    "a3": "Nie – specjalizujemy się w projektach Troelsa Gravesena, które często bazują na komponentach Jantzen Audio, ale możemy również dostosować obudowę pod inne zestawy DIY.",
+    "q4": "Jak wygląda proces produkcji obudowy?",
+    "a4": "Rozpoczynamy od konsultacji i ustalenia szczegółów, następnie wykonujemy projekt CAD, a potem precyzyjnie wycinamy elementy CNC i składamy obudowę z zachowaniem najwyższych standardów jakości.",
+    "q5": "Jak długo trwa realizacja zamówienia?",
+    "a5": "Standardowy czas produkcji to od 4 do 8 tygodni, od momentu otrzymania zaliczki, w zależności od stopnia skomplikowania projektu i wybranego wykończenia.",
+    "q6": "Czy mogę zamówić obudowy w wykończeniu niestandardowym?",
+    "a6": "Tak – realizujemy zamówienia na obudowy w indywidualnych wykończeniach, takich jak rzadkie forniry, kolory RAL czy kombinacje kilku materiałów."
+  },
+  "Troels_contact":{
+    "title": "Gotowy na swoją obudowę Troels Gravesen?",
+    "desc": "Skontaktuj się z nami, aby omówić szczegóły i rozpocząć proces budowy obudowy kolumn, która pozwoli Twojemu zestawowi DIY zabrzmieć w pełni swojego potencjału.",
+    "button_email": "Skontaktuj się z nami",
+    "button_whatsapp": "Napisz do nas na WhatsApp"
   }
 }
