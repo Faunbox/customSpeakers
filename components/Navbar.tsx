@@ -11,8 +11,8 @@ import {Link} from '@/i18n/navigation'
 
 export const menuArray = [
   { key: "home", href: "/" },
-  { key: "about", href: "#o-nas" },
-  { key: "offer", href: "#oferta" },
+  { key: "about", href: "/#o-nas" },
+  { key: "offer", href: "/#oferta" },
   {
     key: "diy",
     href: "#",
@@ -21,9 +21,9 @@ export const menuArray = [
       { key: "custom-designs", href: "/diy/custom-designs" },
     ],
   },
-  { key: "gallery", href: "#galeria" },
-  { key: "history", href: "#historia" },
-  { key: "contact", href: "#kontakt" },
+  { key: "gallery", href: "/#galeria" },
+  { key: "history", href: "/#historia" },
+  { key: "contact", href: "/#kontakt" },
 ];
 
 const Navbar = () => {
