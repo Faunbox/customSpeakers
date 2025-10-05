@@ -1,84 +1,119 @@
 "use client"
-
-import { useState } from "react"
 import { motion } from "framer-motion"
 import { Volume2, Music, Mic, Radio } from "lucide-react"
 import { useTranslations } from "next-intl"
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+}
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+}
+
 const TextWall = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  const t = useTranslations('History');
+  const t = useTranslations("History")
   const paragraphs = [
     {
-      icon: <Volume2 className="w-8 h-8 text-purple-500" />,
+      icon: Volume2,
       title: t("passion.title"),
-      content: t("passion.content")
+      content: t("passion.content"),
     },
     {
-      icon: <Music className="w-8 h-8 text-purple-500" />,
+      icon: Music,
       title: t("mission.title"),
-      content: t("mission.content")
+      content: t("mission.content"),
     },
     {
-      icon: <Mic className="w-8 h-8 text-purple-500" />,
+      icon: Mic,
       title: t("components.title"),
-      content: t("components.content")
+      content: t("components.content"),
     },
     {
-      icon: <Radio className="w-8 h-8 text-purple-500" />,
+      icon: Radio,
       title: t("quality.title"),
-      content: t("quality.content")
-    }
-  ];
+      content: t("quality.content"),
+    },
+  ]
 
   return (
-    <section id="historia" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-purple-900 opacity-50" />
-      <div className="absolute inset-0 bg-cover bg-center opacity-10" />
-      <div className="container mx-auto px-4 relative z-10">
-        <motion.h2
-          className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
+    <section id="historia" className="py-24 px-4 bg-stone-900">
+      <div className="container mx-auto max-w-7xl">
+        {/* Section Title */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
         >
-          {t("title")}
-        </motion.h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          {paragraphs.map((paragraph, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-lg p-6 shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
+          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-gray-300 via-gray-400 to-gray-300 bg-clip-text text-transparent">
+              {t("title")}
+            </span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">Nasza historia i wartości</p>
+        </motion.div>
+
+        {/* Content Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          {paragraphs.map((paragraph, index) => {
+            const Icon = paragraph.icon
+            return (
               <motion.div
-                className="flex items-center mb-4"
-                initial={{ x: -20 }}
-                animate={{ x: hoveredIndex === index ? 0 : -20 }}
+                key={index}
+                variants={cardVariants}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group relative"
               >
-                {/* {paragraph.icon} */}
-                <h3 className="text-2xl font-semibold ml-4 text-purple-300">{paragraph.title}</h3>
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-400/20 via-gray-500/20 to-gray-400/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
+
+                <div className="relative bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 group-hover:border-gray-400/50 rounded-2xl p-8 h-full transition-all duration-500">
+                  <motion.div
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                    className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-gray-400/20 to-gray-500/20 flex items-center justify-center group-hover:from-gray-400/30 group-hover:to-gray-500/30 transition-all duration-500"
+                  >
+                    <Icon className="w-8 h-8 text-gray-400 group-hover:text-gray-300 transition-colors duration-500" />
+                  </motion.div>
+
+                  <h3 className="text-xl font-bold mb-4 text-white group-hover:bg-gradient-to-r group-hover:from-gray-300 group-hover:to-gray-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
+                    {paragraph.title}
+                  </h3>
+
+                  <p className="text-gray-400 leading-relaxed text-sm group-hover:text-gray-300 transition-colors duration-500">
+                    {paragraph.content}
+                  </p>
+
+                  <div className="absolute bottom-4 right-4 w-8 h-0.5 bg-gray-400/50 group-hover:bg-gray-300 group-hover:w-12 transition-all duration-500" />
+                </div>
               </motion.div>
-              <p className="text-gray-300 leading-relaxed">{paragraph.content}</p>
-              <motion.div
-                className="mt-4 h-1 bg-gradient-to-r from-purple-500 to-pink-500"
-                initial={{ width: 0 }}
-                animate={{ width: hoveredIndex === index ? "100%" : "0%" }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.div>
-          ))}
-        </div>
+            )
+          })}
+        </motion.div>
       </div>
     </section>
   )
 }
 
 export default TextWall
-

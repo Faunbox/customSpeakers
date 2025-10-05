@@ -42,18 +42,27 @@
     "contact": "Contact"
   },
   "Hero": {
-    "headline": "Your sound, Your style",
+    "headline1": "Your sound,",
+    "headline2": "Your style",
     "subheadline": "Custom speakers tailored to You",
     "cta": "Learn more"
   },
   "About": {
-    "title": "About us",
-    "experience": "10 Years of Experience",
-    "description": "We are enthusiasts of sound and aesthetics who combine their knowledge and experience to deliver audio solutions tailored to the individual needs of our clients. Skills acquired over the years allow us to combine technical knowledge with a unique approach to design.",
-    "goal": "Our goal is to deliver custom enclosures that not only sound exceptional but also look like works of art, creating the perfect complement to your space. Our custom speakers are a guarantee of satisfaction."
+    "badge": "Precision Craftsmanship",
+    "title": "Custom Speaker Cabinets",
+    "experience": "Years of experience",
+    "description1": "Transform your audio vision into reality with our precision-engineered custom speaker cabinets. Each enclosure is crafted with exceptional attention to detail, combining acoustic performance with aesthetic excellence.",
+    "description2": "We specialize in producing DIY and OEM speaker enclosures that perfectly match your selected drivers and crossover designs. Using premium materials, advanced woodworking techniques, and acoustic engineering expertise, we ensure structural stability, controlled resonance, and accurate sound reproduction.",
+    "description3": "Whether you're building a Troels Gravesen design or developing your own bespoke speaker system, our craftsmanship and experience provide the perfect foundation for outstanding audio performance. We work with both DIY enthusiasts and OEM manufacturers, delivering perfectly built speaker cabinets tailored to your concept.",
+    "button_cta": "Start Your Project",
+    "button_gallery": "View Our Work",
+    "realisation": "Featured Build",
+    "cabinets": "Cabinets",
+    "satisfaction": "Satisfaction"
   },
   "Offer": {
     "title": "Offert",
+    "subtitle": "Comprehensive audio solutions tailored to your needs.",
     "customSpeakers": {
       "title": "Custom Speakers",
       "description": "We create unique audio systems tailored to your needs and preferences, whether it’s for a living room, office, or bedroom. We consider the target environment, your current amplifier, and your sound preferences."
@@ -72,10 +81,18 @@
     }
   },
   "Gallery": {
-    "title": "Our Works"
+    "title": "Our Works",
+    "description": "See our custom speaker cabinets in action",
+    "button": "See More,",
+    "altec": "A modern take on the legendary Altec 816 bass horn, originally used in classic Voice of the Theatre systems. The design was modified with a split, symmetrical bass reflex port and built from 18 mm and 15 mm birch plywood, reinforced internally for maximum rigidity and resonance control. The cabinets were delivered prepped and ready for the client’s own finishing.",
+    "m1": "This time, we present compact bookshelf speakers, developed through a complete process – from 3D design to the finished set. The enclosures, made from 16 mm MDF with a double front panel and reinforced interior, provide excellent rigidity and vibration control. Finished in Midnight Sky lacquer, the speakers impress not only with their appearance but also with their sound – natural, spacious, and precise.",
+    "ls3": "A double project for a single client – compact KEF CS1A speakers and a DIY Rogers AB1 subwoofer, crafted from 12 mm birch plywood and 16 mm MDF. Each enclosure is meticulously detailed according to the design and renders, ensuring perfect proportions and aesthetics. The result is a set with a iconic look and exceptional sound.",
+    "jaspa": "The client had clear expectations – he wanted new speakers that would deliver fuller vocals compared to his Pylon Jasper. Keeping the preferred enclosure shape and familiar drivers, we designed an MTM (midwoofer-tweeter-midwoofer) configuration tailored to his needs. The tweeter’s placement perfectly aligned with ear height on his sofa, confirming the concept’s effectiveness and improved sound.",
+    "klipsch": "Klipsch RF7 mk3 – the client sent the original drivers and requested a faithfully reproduced enclosure in glossy black with a plinth. The final result impresses with flawless lacquer and meticulously crafted details. These powerful speakers make a huge impact in person."
   },
   "OrderProcess": {
     "title": "How to order?",
+    "subtitle": "You'r first step to your dream speakers",
     "steps": {
       "consultation": {
         "title": "Consultation",
@@ -119,8 +136,13 @@
     }
   },
   "Contact": {
+    "badge": "Start your audio journey",
     "title": "Contact",
+    "description": "Have questions? Want to order custom speakers? Get in touch with us today!",
     "subtitle": "Have a question?",
+    "a1": "Response within 24h",
+    "a2": "Free consultation",
+    "a3": "Individual approach",
     "name": "Name",
     "email": "Email address",
     "message": "Message",
@@ -142,7 +164,9 @@
   },
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. All rights reserved.",
-    "privacyPolicy": "Privacy Policy"
+    "privacyPolicy": "Privacy Policy",
+    "description": "Premium custom speaker solutions crafted with precision and passion.",
+    "links": "Quick Links"
   },
   "Cookie": {
     "title": "We respect your privacy",
@@ -201,6 +225,10 @@
     "point4": "Timely delivery and full compliance with design specifications.",
     "point5": "Individual approach – possibility to modify Troels Gravesen’s designs to meet client requirements.",
     "point6": "Wide range of aesthetic finishes: veneers, high-gloss lacquer, matte surfaces."
+  },
+   "Troels_gallery": {
+    "title": "Selected Troels Gravesen Cabinets",
+    "description": "See our realizations of enclosures for Troels Gravesen projects and discover how precision craftsmanship and attention to detail can transform your audio experience. Each cabinet is a blend of CNC technology, advanced woodworking techniques, and a passion for music, creating the perfect environment for your Jantzen Audio DIY Kit system."
   },
   "Troels_faq": {
     "title": "FAQ",

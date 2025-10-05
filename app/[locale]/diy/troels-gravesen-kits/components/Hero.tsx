@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion"
+import { Mail } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const floatingAnimation = {
   animate: {
@@ -14,19 +14,19 @@ const floatingAnimation = {
       ease: "easeInOut",
     },
   },
-};
+}
 
 const Hero = () => {
-   const t = useTranslations("Troels_hero");
+  const t = useTranslations("Troels_hero")
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidde">
+    <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-black">
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-gray-400/20 to-gray-600/20 rounded-full blur-3xl"
           {...floatingAnimation}
         />
         <motion.div
-          className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full blur-3xl"
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-gray-300/20 to-gray-500/20 rounded-full blur-3xl"
           {...floatingAnimation}
           animate={{
             y: [20, -20, 20],
@@ -41,7 +41,6 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 text-center space-y-8 px-4 max-w-6xl mx-auto">
-
         <motion.div
           className="space-y-4"
           initial={{ opacity: 0, y: 50 }}
@@ -50,7 +49,7 @@ const Hero = () => {
         >
           <h1 className="text-6xl md:text-8xl font-bold leading-tight">
             <motion.span
-              className="gradient-text block"
+              className="block bg-gradient-to-r from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -58,7 +57,7 @@ const Hero = () => {
               Troels Gravesen
             </motion.span>
             <motion.span
-              className=" block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"
+              className="block bg-gradient-to-r from-gray-200 via-gray-400 to-gray-300 bg-clip-text text-transparent"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -73,9 +72,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
-            {t("desc")}
-          </p>
+          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">{t("desc")}</p>
         </motion.div>
 
         <motion.div
@@ -87,11 +84,9 @@ const Hero = () => {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               size="lg"
-              className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 group bg-purple-600 hover:bg-purple-700"
+              className="text-lg px-8 py-4 bg-black border border-gray-700 hover:border-gray-400 hover:bg-gray-900 text-white group transition-all duration-300"
               onClick={() => {
-                document
-                  .getElementById("contact-section")
-                  ?.scrollIntoView({ behavior: "smooth" });
+                document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" })
               }}
             >
               <motion.div
@@ -107,7 +102,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

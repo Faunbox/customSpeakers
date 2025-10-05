@@ -41,18 +41,27 @@
     "contact": "Kontakt"
   },
   "Hero": {
-    "headline": "Twoje brzmienie, Twój styl",
+    "headline1": "Twoje brzmienie,",
+    "headline2": "Twój styl",
     "subheadline": "Kolumny na zamówienie dopasowane do Ciebie",
     "cta": "Dowiedz się więcej"
   },
   "About": {
-    "title": "O nas",
-    "experience": "10 Lat Doświadczenia",
-    "description": "Jesteśmy pasjonatami dźwięku i estetyki, którzy łączą swoją wiedzę i doświadczenie, żeby dostarczyć rozwiązania audio dopasowane do indywidualnych potrzeb naszych klientów. Umiejętności zdobyte przez lata pozwalają nam łączyć wiedzę techniczną z wyjątkowym podejściem do projektowania.",
-    "goal": "Naszym celem jest dostarczanie obudowy na zamówienie, które nie tylko brzmią doskonale, ale także wyglądają jak dzieła sztuki, tworząc idealne dopełnienie Twojej przestrzeni. Nasze kolumny na zamówienie to gwarancja satysfakcji."
+    "badge": "Precyzja wykonania",
+    "title": "Obudowy kolumn na zamówienie",
+    "experience": "Lat doświadczenia",
+    "description1": "Przenieś swoją wizję dźwięku do rzeczywistości dzięki precyzyjnie projektowanym obudowom głośnikowym tworzonym na zamówienie.",
+    "description2": "Jesteśmy pasjonatami dźwięku i estetyki, którzy łączą swoją wiedzę i doświadczenie, żeby dostarczyć rozwiązania audio dopasowane do indywidualnych potrzeb naszych klientów. Umiejętności zdobyte przez lata pozwalają nam łączyć wiedzę techniczną z wyjątkowym podejściem do projektowania.",
+    "description3": "Niezależnie od tego, czy realizujesz projekt Troelsa Gravesena, czy tworzysz własny system audio, nasze rzemiosło i doświadczenie gwarantują perfekcyjną bazę dla wyjątkowych doznań dźwiękowych. Współpracujemy zarówno z hobbystami DIY, jak i producentami OEM, zapewniając najwyższą precyzję wykonania i pełne dopasowanie do Twojej koncepcji.",
+    "button_cta": "Rozpocznij swój projekt",
+    "button_gallery": "Zobacz nasze prace",
+    "realisation": "Realizacja",
+    "cabinets": "Realizacji",
+    "satisfaction": "Satysfakcji"
   },
   "Offer": {
     "title": "Oferta",
+    "subtitle": "Kompleksowe rozwiązania audio dostosowane do Twoich potrzeb.",
     "customSpeakers": {
       "title": "Kolumny na zamówienie",
       "description": "Tworzymy unikalne obudowy kolumny na zamówienie dopasowane do Twoich potrzeb i preferencji, niezależnie od tego czy jest to salon, biuro czy sypialnia. Bierzemy pod uwagę docelowe środowisko, w którym pracować będą Twoje przyszłe kolumny, Twój obecny wzmacniacz oraz upodobania brzmieniowe."
@@ -71,10 +80,18 @@
     }
   },
   "Gallery": {
-    "title": "Nasze prace"
+    "title": "Wybrane realizacje",
+    "description": "Odkryj nasze wybrane realizacje i zobacz, jak nasze kolumny na zamówienie mogą odmienić Twoje doświadczenia audio. Każdy projekt to unikalne połączenie precyzji wykonania, nowoczesnego designu i doskonałej akustyki. Przekonaj się, jak nasze obudowy głośnikowe łączą technologię z pasją do muzyki, tworząc wyjątkowe wrażenia dźwiękowe.",
+    "button": "Zobacz więcej",
+    "altec": "Rekonstrukcja legendarnej obudowy Altec 816, znanej z klasycznych systemów Voice of the Theatre. Projekt został zmodyfikowany – tunel bass reflex rozdzielono i umieszczono symetrycznie po bokach, a konstrukcję wykonano ze sklejki brzozowej 18 i 15 mm z dodatkowymi wzmocnieniami wewnętrznymi dla lepszej sztywności. Obudowy przygotowano pod samodzielne malowanie przez klienta.",
+    "m1": "Tym razem przedstawiamy kompaktowe monitory podstawkowe typu bookshelf, które powstały w pełnym procesie – od projektu 3D po gotowy zestaw. Obudowy wykonane z 16 mm MDF-u, z podwójnym frontem i wzmocnionym wnętrzem, zapewniają doskonałą sztywność i kontrolę drgań. Całość wykończona w lakierze Midnight Sky zachwyca nie tylko wyglądem, ale też brzmieniem – naturalnym, przestrzennym i precyzyjnym.",
+    "ls3": "Podwójna realizacja dla jednego klienta – kompaktowe monitory KEF CS1A i subwoofer DIY Rogers AB1 wykonane z ze sklejki brzozowej 12 mm i MDF 16 mm). Każda obudowa dopracowana w detalach, zgodnie z projektem i renderami, zapewnia perfekcyjne proporcje i estetykę. Efekt to zestawy o kultowym wyglądzie i doskonałym brzmieniu.",
+    "jaspa": "Klient miał jasno sprecyzowane oczekiwania – chciał nowych kolumn, które oddałyby pełniej wokale w porównaniu do jego Pylon Jasper. Zachowując ulubiony kształt obudowy i znane przetworniki, zaprojektowaliśmy konfigurację MTM (midwoofer-tweeter-midwoofer) dopasowaną do jego potrzeb. Idealne ustawienie tweetera względem wysokości uszu na sofie potwierdziło słuszność koncepcji i poprawę brzmienia.",
+    "klipsch": "Klipsch RF7 mk3 – klient przesłał przetworniki i chciał wiernie odwzorowaną obudowę w czarnym połysku z cokołem. Efekt końcowy zachwyca perfekcyjnym lakierem i dopracowanymi detalami. Te potężne kolumny robią ogromne wrażenie na żywo."
   },
   "OrderProcess": {
     "title": "Jak zamówić?",
+    "subtitle": "Pierwszy krok do Twoich wymarzonych kolumn",
     "steps": {
       "consultation": {
         "title": "Konsultacja",
@@ -119,8 +136,13 @@
   },
 
   "Contact": {
+    "badge": "Rozpocznij swoją nową przygodę",
     "title": "Kontakt",
+    "description": "Masz pytania? Chcesz zamówić kolumny na wymiar? Skontaktuj się z nami już dziś!",
     "subtitle": "Masz pytanie?",
+    "a1": "Odpowiedź w 24h",
+    "a2": "Bezpłatna konsultacja",
+    "a3": "Indywidualne podejście",
     "name": "Imię",
     "email": "Adres email",
     "message": "Wiadomość",
@@ -142,7 +164,9 @@
   },
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. Wszelkie prawa zastrzeżone.",
-    "privacyPolicy": "Polityka prywatności"
+    "privacyPolicy": "Polityka prywatności",
+     "description": "Obudowy kolumn na zamówienie - Twój dźwięk na Twoich zasadach.",
+    "links": "Menu"
   },
 
   "Cookie": {
@@ -193,6 +217,10 @@
     "title5": "Dostępne modele Troels Gravesen",
     "section6": "Nasze obudowy powstają z myślą o najbardziej wymagających klientach – zarówno indywidualnych, jak i producentach sprzętu audio. Dzięki wieloletniemu doświadczeniu, terminowości i najwyższej jakości wykonania zaufały nam marki ze Szwajcarii, Holandii, USA i wielu innych krajów.",
     "title6": "Doświadczenie i zaufanie marek"
+  },
+  "Troels_gallery": {
+    "title": "Wybrane kolumny Troels Gravesen",
+    "description": "Zobacz nasze realizacje obudów do projektów DIY Troels Gravesen i przekonaj się, jak precyzyjne wykonanie i dbałość o detale mogą odmienić Twoje doświadczenia audio. Każda obudowa na zamówienie to połączenie technologii CNC, zaawansowanych metod stolarskich i pasji do muzyki, tworzące idealne warunki dla Twojego zestawu DIY Jantzen Audio Kit."
   },
   "Troels_why": {
     "title": "Dlaczego my?",
