@@ -83,7 +83,7 @@
   "Gallery": {
     "title": "Our Works",
     "description": "See our custom speaker cabinets in action",
-    "button": "See More,",
+    "button": "See More",
     "altec": "A modern take on the legendary Altec 816 bass horn, originally used in classic Voice of the Theatre systems. The design was modified with a split, symmetrical bass reflex port and built from 18 mm and 15 mm birch plywood, reinforced internally for maximum rigidity and resonance control. The cabinets were delivered prepped and ready for the client’s own finishing.",
     "m1": "This time, we present compact bookshelf speakers, developed through a complete process – from 3D design to the finished set. The enclosures, made from 16 mm MDF with a double front panel and reinforced interior, provide excellent rigidity and vibration control. Finished in Midnight Sky lacquer, the speakers impress not only with their appearance but also with their sound – natural, spacious, and precise.",
     "ls3": "A double project for a single client – compact KEF CS1A speakers and a DIY Rogers AB1 subwoofer, crafted from 12 mm birch plywood and 16 mm MDF. Each enclosure is meticulously detailed according to the design and renders, ensuring perfect proportions and aesthetics. The result is a set with a iconic look and exceptional sound.",
@@ -99,7 +99,7 @@
         "description": "First contact, where you describe your requirements."
       },
       "projectAndQuote": {
-        "title": "Custom project and quote",
+        "title": "Custom project",
         "description": "After understanding the requirements, we create a 3D project for approval and a full quote."
       },
       "payment": {
