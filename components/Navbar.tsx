@@ -276,14 +276,14 @@ const Navbar = () => {
                       </AnimatePresence>
                     </div>
                   ) : (
-                    <a
+                    <Link
                       href={href}
                       className="block py-3 px-4 text-gray-200 hover:text-white hover:bg-gray-800/50 transition-all duration-300 rounded-lg group relative"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <span className="relative z-10">{t(key)}</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-gray-400/0 via-gray-400/5 to-gray-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </a>
+                    </Link>
                   )}
                 </motion.li>
               ))}
