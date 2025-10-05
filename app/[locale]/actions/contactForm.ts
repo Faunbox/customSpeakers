@@ -8,13 +8,13 @@ type ResponseData = {
   message: string
 }
 
-export async function sendContactEmail(formData: FormData, lng: string): Promise<ResponseData> {
+export async function sendContactEmail(formData: FormData): Promise<ResponseData> {
   try {
     // Extract form data
     const name = formData.get("name")?.toString()
     const email = formData.get("email")?.toString()
     const message = formData.get("description")?.toString()
-    console.log("Language:", lng)
+    // console.log("Language:", lng)
     console.log("Form data received:", { name, email, message })
 
     // Validate required fields

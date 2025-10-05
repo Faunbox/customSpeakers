@@ -8,7 +8,7 @@ import { z } from "zod"
 import { type SubmitHandler, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { sendContactEmail } from "@/app/[locale]/actions/contactForm"
-import { useLocale, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
 
 export const email = "kontakt@mfcustoms.pl"
 export const phone_number = "790 616 496"
@@ -53,7 +53,7 @@ const Contact = () => {
   })
 
   const formValues = watch()
-  const lng = useLocale() || "pl"
+  // const lng = useLocale() || "pl"
 
   async function onSend(data: ValidationSchema) {
     try {
@@ -62,7 +62,7 @@ const Contact = () => {
       Object.entries(data).forEach(([key, value]) => {
         formData.append(key, JSON.stringify(value))
       })
-      const res = await sendContactEmail(formData, lng)
+      const res = await sendContactEmail(formData)
       setResponse({
         status: res.status,
         message: res.message,
