@@ -73,7 +73,7 @@ const speakerShowcase = [
     id: "Klipsch",
     name: "Custom Klipsch RF7 MK3",
     type: "Floor-standing speakers",
-    image: "/images/klipsch/11.jpg",
+    image: "/images/klipsch/11.webp",
     description:
       t("klipsch"),
     link: "/diy/troels-kits",
