@@ -22,21 +22,21 @@ const speakerShowcase = [
     description:
       t("altec"),
     link: "/diy/troels-kits",
-    gallery: ["/images/12.webp", "images/altec/12.jpg", "images/altec/13.jpg", "images/altec/14.jpg"],
+    gallery: ["/images/altec/11.webp", "images/altec/12.webp", "images/altec/13.webp", "images/altec/14.webp"],
   },
   {
     id: "M1",
     name: "M1 model",
     type: "Bookshelf Monitor",
-    image: "/images/m1/11.jpg",
+    image: "/images/m1/1.jpg",
     description:
       t("m1"),
     link: "/diy/troels-kits",
     gallery: [
-      "/images/m1/11.jpg",
-      "/images/m1/12.jpg",
-      "/images/m1/13.jpg",
-      "/images/m1/14.jpg",
+      "/images/m1/1.jpg",
+      "/images/m1/12.webp",
+      "/images/m1/13.webp",
+      "/images/m1/14.webp",
     ],
   },
   {
@@ -78,10 +78,10 @@ const speakerShowcase = [
       t("klipsch"),
     link: "/diy/troels-kits",
     gallery: [
-      "/images/klipsch/11.jpg",
-      "/images/klipsch/12.jpg",
+      "/images/klipsch/11.webp",
+      "/images/klipsch/12.webp",
       "/images/klipsch/13.jpg",
-      "/images/klipsch/14.jpg",
+      "/images/klipsch/14.webp",
     ],
   },
 ]

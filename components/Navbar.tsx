@@ -18,6 +18,7 @@ export const menuArray = [
     dropdown: [
       { key: "troels-kits", href: "/diy/troels-gravesen-kits" },
       { key: "custom-designs", href: "/diy/custom-designs" },
+      { key: "mf-customs-kits", href: "/diy/mf-customs-kits" },
     ],
   },
   { key: "gallery", href: "/#galeria" },
