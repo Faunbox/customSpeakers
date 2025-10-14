@@ -1,8 +1,8 @@
 // import About from "@/components/About";
 // import Contact from "@/components/Contact";
 import CustomCabinetShowcase from "@/components/Craft";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+// import Footer from "@/components/Footer";
+// import Navbar from "@/components/Navbar";
 // import Gallery from "@/components/Gallery";
 // import Hero from "@/components/Hero";
 import Contact from "@/components/New_Contct";
@@ -16,7 +16,7 @@ import TextWall from "@/components/TextWall";
 export default function Home() {
   return (
     <main className="bg-gray-900 text-white">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Hero /> */}
       <Hero />
       <CustomCabinetShowcase />
@@ -29,7 +29,7 @@ export default function Home() {
       <TextWall />
 <Contact />
       {/* <Contact /> */}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

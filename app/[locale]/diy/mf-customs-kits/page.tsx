@@ -1,7 +1,6 @@
 "use client"
 
-import Footer from "@/components/Footer"
-import Navbar from "@/components/Navbar"
+
 import { motion } from "framer-motion"
 import { Sparkles, Clock, Wrench } from "lucide-react"
 
@@ -36,7 +35,6 @@ export default function CustomDesignsPage() {
         />
       </div>
 
-      <Navbar />
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-4 py-20">
         <div className="text-center space-y-8 max-w-4xl">
@@ -128,7 +126,6 @@ export default function CustomDesignsPage() {
         </div>
       </div>
 
-      <Footer />
     </main>
   )
 }

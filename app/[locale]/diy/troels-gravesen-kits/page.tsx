@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer"
-import Navbar from "@/components/Navbar"
+
 import { Metadata } from "next"
 import TroelsContent from "./components/wholePage"
 
@@ -18,9 +17,8 @@ export const metadata: Metadata = {
 export default function TroelsKitsPage() {
   return (
     <main className="bg-gray-900 text-white min-h-screen">
-      <Navbar />
+    
       <TroelsContent/>
-      <Footer />
     </main>
   )
 }
