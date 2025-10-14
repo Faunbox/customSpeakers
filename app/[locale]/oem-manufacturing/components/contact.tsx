@@ -95,7 +95,7 @@ export default function OEMContact() {
             className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 md:p-12 text-white flex flex-col justify-center"
           >
             <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent">
-              Let's Build Something Amazing
+              Let&quot;s Build Something Amazing
             </h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
               Whether you need a single prototype or large-scale production, our team is ready to bring your audio
