@@ -40,13 +40,9 @@ export default function OEMCapabilities() {
   return (
     <section
       id="capabilities"
-      className="relative py-24 bg-gradient-to-b from-black via-stone-900 to-black overflow-hidden"
+      className="relative py-24 bg-stone-900 overflow-hidden"
     >
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-96 h-96 bg-gray-400/10 rounded-full blur-3xl top-20 -left-48 animate-pulse" />
-        <div className="absolute w-96 h-96 bg-gray-500/10 rounded-full blur-3xl bottom-20 -right-48 animate-pulse" />
-      </div>
+   
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

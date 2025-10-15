@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Factory } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function OEMHero() {
@@ -42,21 +42,21 @@ export default function OEMHero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8"
+          transition={{ duration: 0.6 }}
+          className="mb-6"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 mb-8">
-            <Factory className="w-10 h-10 text-gray-300" />
-          </div>
+          <span className="inline-block px-4 py-2 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full text-sm text-gray-300 font-medium">
+            Professional Audio Manufacturing Solutions
+          </span>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent leading-tight"
         >
           OEM Manufacturing
         </motion.h1>
@@ -65,28 +65,38 @@ export default function OEMHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto leading-relaxed"
         >
           Transform your audio vision into reality with precision engineering, scalable production, and uncompromising
           quality control
         </motion.p>
 
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-base md:text-lg text-gray-400 mb-12 max-w-3xl mx-auto"
+        >
+          Trusted by leading pro-audio brands worldwide for custom speaker manufacturing, premium finishing, and
+          complete turnkey solutions
+        </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Link
             href="#contact"
-            className="group inline-flex items-center justify-center px-8 py-4 bg-black border border-gray-700 text-white rounded-lg hover:border-gray-400 transition-all duration-300 hover:shadow-[0_0_30px_rgba(156,163,175,0.3)]"
+            className="group inline-flex items-center justify-center px-8 py-4 bg-white text-black rounded-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)] font-medium"
           >
             Start Your Project
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link
             href="#capabilities"
-            className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-gray-700 text-gray-300 rounded-lg hover:border-gray-400 hover:text-white transition-all duration-300"
+            className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-gray-700 text-gray-300 rounded-lg hover:border-gray-400 hover:text-white transition-all duration-300 font-medium"
           >
             Explore Capabilities
           </Link>
