@@ -29,6 +29,66 @@
     },
     "canonical": "https://www.mfcustoms.pl"
   },
+  "MetaTags_troels": {
+    "locale": "pl",
+    "title": "MF Custom Speakers | Zestawy Troels Gravesen DIY Kits",
+    "desc": "Troels Gravesen diy kits - Oferujemy obudowy i kompletne kolumny DIY oparte na projektach Troelsa Gravesena. Precyzyjnie wykonane obudowy kolumn gwarantują idealne dopasowanie do oryginalnych zestawów diy ze strony Jantzen Audio. Postaw na jakość, akustykę i estetykę – stwórz własne kolumny Troels Gravesen z nami.",
+    "openGraph": {
+      "title": "MF Custom Speakers | Zestawy Troels Gravesen DIY Kits",
+      "description": "Troels Gravesen diy kits - Oferujemy obudowy i kompletne kolumny DIY oparte na projektach Troelsa Gravesena. Precyzyjnie wykonane obudowy kolumn gwarantują idealne dopasowanie do oryginalnych zestawów diy ze strony Jantzen Audio. Postaw na jakość, akustykę i estetykę – stwórz własne kolumny Troels Gravesen z nami."
+    },
+    "twitter": {
+      "title": "MF Custom Speakers | Zestawy Troels Gravesen DIY Kits",
+      "description": "Troels Gravesen diy kits - Oferujemy obudowy i kompletne kolumny DIY oparte na projektach Troelsa Gravesena. Precyzyjnie wykonane obudowy kolumn gwarantują idealne dopasowanie do oryginalnych zestawów diy ze strony Jantzen Audio. Postaw na jakość, akustykę i estetykę – stwórz własne kolumny Troels Gravesen z nami."
+    },
+    "keywords": {
+      "key1": "Treols Gravesen diy kits",
+      "key2": "Troels Gravesen obudowy głośnikowe",
+      "key3": "Troels Gravesen kolumny diy",
+      "key4": "Troels Gravesen obudowy diy",
+      "key5": "Troels Gravesen obudowy kolumn",
+      "key6": "Troels Gravesen zestawy diy",
+      "key7": "zestawy diy Troels Gravesen",
+      "key8": "Troels Gravesen kolumny na zamówienie",
+      "key9": "dit kits Troels Gravesen",
+      "key10": "Troels Gravesen projektowanie kolumn",
+      "key11": "projekt kolumn głośnikowych",
+      "key12": "obudowy kolumn na zamówienie",
+      "key13": "Głośniki na zamówienie",
+      "key14": "kolumny na zamowienie"
+    },
+    "canonical": "https://www.mfcustoms.pl/diy/troels-gravesen-kits"
+  },
+  "MetaTags_oem": {
+    "locale": "pl",
+    "title": "MF Custom Speakers | Obuduowy kolumn na zamówienie",
+    "desc": "Specjalizujemy się w projektowaniu kolumn na zamówienie dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Nasze obudowy kolumn na zamówienie to gwarancja satysfakcji. Sprawdź naszą ofertę na gotowe kolumny diy!",
+    "openGraph": {
+      "title": "MF Custom Speakers | Kolumny na zamówienie",
+      "description": "Kolumny na zamówienie dla Ciebie! Specjalizujemy się w tworzeniu obudów głośnikowych dla audiofilów i miłośników wysokiej jakości dźwięku. Oferujemy precyzyjne wykonanie, nowoczesny design oraz doskonałą akustykę dzięki wykorzystaniu maszyn CNC i projektów CAD. Nasze rozwiązania łączą technologię z pasją do muzyki, zapewniając wyjątkowe wrażenia dźwiękowe. Nasze obudowy kolumn na zamówienie to gwarancja satysfakcji."
+    },
+    "twitter": {
+      "title": "MF Custom Speakers | Dzwięk na Twoich zasadach",
+      "description": "Tworzymy kolumny na zamówienie dla audiofilów i miłośników dobrego dzwięku. Precyzyjne wykonanie, nowoczesny design i najwyższa jakość dźwięku. Sprawdź, jak możemy poprawić brzmienie Twojego systemu audio!"
+    },
+    "keywords": {
+      "key1": "obudowy głośnikowe",
+      "key2": "customowe systemy audio",
+      "key3": "obudowy diy",
+      "key4": "Obudowy kolumn na zamówienie",
+      "key5": "audiofil",
+      "key6": "obudowy kolumn",
+      "key7": "obudowy głośników",
+      "key8": "kolumny diy",
+      "key9": "projektowanie głośników",
+      "key10": "projektowanie kolumn",
+      "key11": "projekt kolumn głośnikowych",
+      "key12": "obudowy kolumn na zamówienie",
+      "key13": "Głośniki na zamówienie",
+      "key14": "kolumny na zamowienie"
+    },
+    "canonical": "https://www.mfcustoms.pl"
+  },
   "Navigation": {
     "home": "Start",
     "about": "O nas",

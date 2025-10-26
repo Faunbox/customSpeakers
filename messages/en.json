@@ -29,6 +29,36 @@
     },
     "canonical": "https://www.mfcustoms.pl/en"
   },
+  "MetaTags_troels": {
+    "locale": "en",
+    "title": "MF Custom Speakers | Troels Gravesen DIY Kits",
+    "desc": "Troels Gravesen DIY Kits – We offer speaker cabinets and complete DIY loudspeakers based on Troels Gravesen’s designs. Each enclosure is precisely crafted to perfectly match the original DIY kits from Jantzen Audio. Choose quality, acoustics, and aesthetics – build your own Troels Gravesen loudspeakers with us.",
+    "openGraph": {
+      "title": "MF Custom Speakers | Troels Gravesen DIY Kits",
+      "description": "Troels Gravesen DIY Kits – We offer speaker cabinets and complete DIY loudspeakers based on Troels Gravesen’s designs. Each enclosure is precisely crafted to perfectly match the original DIY kits from Jantzen Audio. Choose quality, acoustics, and aesthetics – build your own Troels Gravesen loudspeakers with us."
+    },
+    "twitter": {
+      "title": "MF Custom Speakers | Troels Gravesen DIY Kits",
+      "description": "Troels Gravesen DIY Kits – We offer speaker cabinets and complete DIY loudspeakers based on Troels Gravesen’s designs. Each enclosure is precisely crafted to perfectly match the original DIY kits from Jantzen Audio. Choose quality, acoustics, and aesthetics – build your own Troels Gravesen loudspeakers with us."
+    },
+    "keywords": {
+      "key1": "Troels Gravesen DIY kits",
+      "key2": "Troels Gravesen speaker cabinets",
+      "key3": "Troels Gravesen DIY speakers",
+      "key4": "Troels Gravesen DIY enclosures",
+      "key5": "Troels Gravesen loudspeaker cabinets",
+      "key6": "Troels Gravesen DIY sets",
+      "key7": "DIY kits Troels Gravesen",
+      "key8": "Troels Gravesen custom speakers",
+      "key9": "DIY speaker kits Troels Gravesen",
+      "key10": "Troels Gravesen speaker design",
+      "key11": "speaker cabinet design",
+      "key12": "custom speaker enclosures",
+      "key13": "custom speakers",
+      "key14": "speakers made to order"
+    },
+    "canonical": "https://www.mfcustoms.pl/en/diy/troels-gravesen-kits"
+  },
 
   "Navigation": {
     "home": "Home",
@@ -227,7 +257,7 @@
     "point5": "Individual approach – possibility to modify Troels Gravesen’s designs to meet client requirements.",
     "point6": "Wide range of aesthetic finishes: veneers, high-gloss lacquer, matte surfaces."
   },
-   "Troels_gallery": {
+  "Troels_gallery": {
     "title": "Selected Troels Gravesen Cabinets",
     "description": "See our realizations of enclosures for Troels Gravesen projects and discover how precision craftsmanship and attention to detail can transform your audio experience. Each cabinet is a blend of CNC technology, advanced woodworking techniques, and a passion for music, creating the perfect environment for your Jantzen Audio DIY Kit system."
   },
