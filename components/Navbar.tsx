@@ -23,6 +23,7 @@ export const menuArray = [
   },
   { key: "gallery", href: "/#galeria" },
   { key: "history", href: "/#historia" },
+  // { key: "history", href: "/#materials-and-finishings" },
   { key: "contact", href: "/#kontakt" },
 ]
 

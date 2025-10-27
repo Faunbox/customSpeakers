@@ -1,6 +1,7 @@
 // import About from "@/components/About";
 // import Contact from "@/components/Contact";
 import CustomCabinetShowcase from "@/components/Craft";
+// import MaterialsAndFinishings from "@/components/Material";
 // import Footer from "@/components/Footer";
 // import Navbar from "@/components/Navbar";
 // import Gallery from "@/components/Gallery";
@@ -25,6 +26,7 @@ export default function Home() {
       <ServicesShowcase />
       {/* <Gallery /> */}
       <HorizontalGallery />
+      {/* <MaterialsAndFinishings /> */}
       <OrderSteps />
       <TextWall />
 <Contact />

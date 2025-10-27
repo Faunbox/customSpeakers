@@ -92,9 +92,9 @@
   "Navigation": {
     "home": "Start",
     "about": "O nas",
-    "offer": "Oferta",
+    "offer": "Nasza oferta",
     "gallery": "Galeria",
-    "history": "Historia",
+    "history": "Wykończenia",
     "diy": "DIY",
     "troels-kits": "Obudowy do zestawów Troels Gravesen",
     "custom-designs": "Obudowy kolumn na zamówienie",
@@ -149,6 +149,46 @@
     "ls3": "Podwójna realizacja dla jednego klienta – kompaktowe monitory KEF CS1A i subwoofer DIY Rogers AB1 wykonane z ze sklejki brzozowej 12 mm i MDF 16 mm). Każda obudowa dopracowana w detalach, zgodnie z projektem i renderami, zapewnia perfekcyjne proporcje i estetykę. Efekt to zestawy o kultowym wyglądzie i doskonałym brzmieniu.",
     "jaspa": "Klient miał jasno sprecyzowane oczekiwania – chciał nowych kolumn, które oddałyby pełniej wokale w porównaniu do jego Pylon Jasper. Zachowując ulubiony kształt obudowy i znane przetworniki, zaprojektowaliśmy konfigurację MTM (midwoofer-tweeter-midwoofer) dopasowaną do jego potrzeb. Idealne ustawienie tweetera względem wysokości uszu na sofie potwierdziło słuszność koncepcji i poprawę brzmienia.",
     "klipsch": "Klipsch RF7 mk3 – klient przesłał przetworniki i chciał wiernie odwzorowaną obudowę w czarnym połysku z cokołem. Efekt końcowy zachwyca perfekcyjnym lakierem i dopracowanymi detalami. Te potężne kolumny robią ogromne wrażenie na żywo."
+  },
+  "Materials": {
+    "title": "Materiały i wykończenia",
+    "subtitle": "JAKOŚĆ I ESTETYKA",
+    "description": "Oferujemy szeroki wybór materiałów i wykończeń, które pozwolą Ci dostosować wygląd Twoich kolumn do indywidualnych preferencji i stylu wnętrza. Niezależnie od tego, czy preferujesz naturalne drewno, elegancki lakier na wysoki połysk, czy nowoczesne matowe powierzchnie, mamy coś dla Ciebie.",
+    "materials": "Materiały",
+    "finishings": "Wykończenia",
+    "wood": {
+      "title": "Lite drewno",
+      "description": "Naturalne drewno to ponadczasowy wybór, który dodaje ciepła i elegancji każdemu wnętrzu. Oferujemy różnorodne gatunki drewna, takie jak dąb, orzech, wiśnia czy jesion, które można wykończyć na różne sposoby – od naturalnego olejowania po lakierowanie na wysoki połysk."
+    },
+    "plywood": {
+      "title": "Sklejka",
+      "description": "Sklejka to trwały i stabilny materiał, który doskonale sprawdza się w konstrukcji obudów kolumn. Oferujemy sklejkę brzozową, która charakteryzuje się wysoką wytrzymałością i estetycznym wyglądem. Sklejka może być wykończona na różne sposoby, w tym malowana lub pokryta fornirem.",
+      "features": [
+        "Wytrzymałość",
+        "Wysoka stabilność ",
+        "Estetyczny wygląd",
+        "Doskonałe właściwości akustyczne"
+      ]
+    },
+    "mdf": {
+      "title": "MDF",
+      "description": "MDF (Medium-Density Fiberboard) to materiał o średniej gęstości, który zapewnia doskonałe właściwości akustyczne dzięki swojej gęstej i jednolitej strukturze. Jest łatwy w obróbce i ekonomiczny, co czyni go popularnym wyborem do produkcji obudów kolumn."
+    },
+    "hdf": {
+      "title": "HDF",
+      "description": "HDF (High-Density Fiberboard) to materiał o wysokiej gęstości, który zapewnia doskonałą sztywność i minimalizuje rezonanse. Jest idealny do zastosowań profesjonalnych, gdzie wymagana jest najwyższa jakość dźwięku i trwałość obudowy."
+    },
+    "lacquer": {
+      "title": "Lakier",
+      "description": "Lakierowane wykończenia oferują szeroką gamę kolorów i efektów – od klasycznych czerni i bieli po żywe barwy i metaliczne odcienie. Lakier na wysoki połysk nadaje kolumnom nowoczesny wygląd, podczas gdy matowe wykończenia zapewniają subtelność i elegancję."
+    },
+    "veneer": {
+      "title": "Fornir",
+      "description": "Fornir to cienka warstwa naturalnego drewna nakładana na powierzchnię obudowy, która pozwala uzyskać efekt luksusowego drewna przy zachowaniu trwałości i stabilności MDF-u. Oferujemy szeroki wybór fornirów, które można dopasować do każdego stylu wnętrza."
+    },
+    "question": "Chciałbyś zastowoać inne materiały lub wykończenia?",
+    "answer": "Jesteśmy otwarci na współpracę z dowolnymi materiałami zaproponowanymi przez Ciebie. Skontaktuj się z nami, aby omówić szczegóły Twojego projektu i dostosować obudowy kolumn do Twoich indywidualnych potrzeb.",
+    "button": "Skontaktuj się z nami"
   },
   "OrderProcess": {
     "title": "Jak zamówić?",
@@ -226,7 +266,7 @@
   "Footer": {
     "rights": "© 2025 MF Custom Speakers. Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności",
-     "description": "Obudowy kolumn na zamówienie - Twój dźwięk na Twoich zasadach.",
+    "description": "Obudowy kolumn na zamówienie - Twój dźwięk na Twoich zasadach.",
     "links": "Menu"
   },
 
@@ -285,12 +325,12 @@
   },
   "Troels_why": {
     "title": "Dlaczego my?",
-    "point1":"Ponad 10 lat doświadczenia w produkcji obudów głośnikowych.",
-    "point2":"Precyzja wykonania dzięki technologii CNC i projektom CAD.",
-    "point3":"Rekomendacja Jantzen Audio dla naszych obudów.",
-    "point4":"Terminowość i pełna zgodność z założeniami projektowymi.",
-    "point5":"Indywidualne podejście – możliwość modyfikacji projektów Troelsa Gravesena pod wymagania klienta.",
-    "point6":"Szeroki wybór wykończeń estetycznych: forniry, lakier na wysoki połysk, powierzchnie matowe."
+    "point1": "Ponad 10 lat doświadczenia w produkcji obudów głośnikowych.",
+    "point2": "Precyzja wykonania dzięki technologii CNC i projektom CAD.",
+    "point3": "Rekomendacja Jantzen Audio dla naszych obudów.",
+    "point4": "Terminowość i pełna zgodność z założeniami projektowymi.",
+    "point5": "Indywidualne podejście – możliwość modyfikacji projektów Troelsa Gravesena pod wymagania klienta.",
+    "point6": "Szeroki wybór wykończeń estetycznych: forniry, lakier na wysoki połysk, powierzchnie matowe."
   },
   "Troels_faq": {
     "title": "Najczęściej zadawane pytania",
@@ -307,7 +347,7 @@
     "q6": "Czy mogę zamówić obudowy w wykończeniu niestandardowym?",
     "a6": "Tak – realizujemy zamówienia na obudowy w indywidualnych wykończeniach, takich jak rzadkie forniry, kolory RAL czy kombinacje kilku materiałów."
   },
-  "Troels_contact":{
+  "Troels_contact": {
     "title": "Gotowy na swoją obudowę Troels Gravesen?",
     "desc": "Skontaktuj się z nami, aby omówić szczegóły i rozpocząć proces budowy obudowy kolumn, która pozwoli Twojemu zestawowi DIY zabrzmieć w pełni swojego potencjału.",
     "button_email": "Skontaktuj się z nami",
