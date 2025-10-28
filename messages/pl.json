@@ -186,7 +186,11 @@
       "title": "Fornir",
       "description": "Fornir to cienka warstwa naturalnego drewna nakładana na powierzchnię obudowy, która pozwala uzyskać efekt luksusowego drewna przy zachowaniu trwałości i stabilności MDF-u. Oferujemy szeroki wybór fornirów, które można dopasować do każdego stylu wnętrza."
     },
-    "question": "Chciałbyś zastowoać inne materiały lub wykończenia?",
+    "oil": {
+      "title": "Olejowanie",
+      "description": "Olejowane wykończenia podkreślają naturalne piękno drewna, uwydatniając jego strukturę i kolor. Olejowanie zapewnia ochronę przed wilgocią i zabrudzeniami, jednocześnie nadając powierzchni miękki, satynowy połysk."
+    },
+    "question": "Chciałbyś zastosować inne materiały lub wykończenia?",
     "answer": "Jesteśmy otwarci na współpracę z dowolnymi materiałami zaproponowanymi przez Ciebie. Skontaktuj się z nami, aby omówić szczegóły Twojego projektu i dostosować obudowy kolumn do Twoich indywidualnych potrzeb.",
     "button": "Skontaktuj się z nami"
   },
@@ -343,7 +347,7 @@
     "q4": "Jak wygląda proces produkcji obudowy?",
     "a4": "Rozpoczynamy od konsultacji i ustalenia szczegółów, następnie wykonujemy projekt CAD, a potem precyzyjnie wycinamy elementy CNC i składamy obudowę z zachowaniem najwyższych standardów jakości.",
     "q5": "Jak długo trwa realizacja zamówienia?",
-    "a5": "Standardowy czas produkcji to od 4 do 8 tygodni, od momentu otrzymania zaliczki, w zależności od stopnia skomplikowania projektu i wybranego wykończenia.",
+    "a5": "Standardowy czas produkcji to od 2 do 4 tygodni, od momentu otrzymania zaliczki, w zależności od stopnia skomplikowania projektu i wybranego wykończenia.",
     "q6": "Czy mogę zamówić obudowy w wykończeniu niestandardowym?",
     "a6": "Tak – realizujemy zamówienia na obudowy w indywidualnych wykończeniach, takich jak rzadkie forniry, kolory RAL czy kombinacje kilku materiałów."
   },

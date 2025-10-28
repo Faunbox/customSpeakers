@@ -121,6 +121,40 @@
     "jaspa": "The client had clear expectations – he wanted new speakers that would deliver fuller vocals compared to his Pylon Jasper. Keeping the preferred enclosure shape and familiar drivers, we designed an MTM (midwoofer-tweeter-midwoofer) configuration tailored to his needs. The tweeter’s placement perfectly aligned with ear height on his sofa, confirming the concept’s effectiveness and improved sound.",
     "klipsch": "Klipsch RF7 mk3 – the client sent the original drivers and requested a faithfully reproduced enclosure in glossy black with a plinth. The final result impresses with flawless lacquer and meticulously crafted details. These powerful speakers make a huge impact in person."
   },
+  "Materials": {
+    "title": "Materials & Finishings",
+    "subtitle": "Customize your speaker cabinets",
+    "description": "Choose from a variety of high-quality materials and finishings to create speaker cabinets that perfectly match your style and acoustic preferences. Whether you prefer the warmth of natural wood, the durability of plywood, or the precision of MDF and solid wood, we have the right solution for you. Our finishing options include lacquer, veneer, and oiling, allowing you to achieve the desired aesthetic while ensuring optimal sound performance.",
+    "materials": "Materials",
+    "finishings": "Finishings",
+    "wood": {
+      "title": "Solid wood",
+      "description": "Solid wood is a premium material that offers exceptional acoustic properties and a unique aesthetic. We use carefully selected hardwoods, such as oak, walnut, or cherry, which provide natural resonance and warmth to the sound. Solid wood enclosures are durable and visually appealing, making them an excellent choice for high-end audio systems."
+    },
+    "plywood": {
+      "title": "Plywood",
+      "description": "Plywood is a layered wood material known for its strength and stability. It consists of multiple thin layers of wood veneer glued together, which minimizes warping and enhances durability. Plywood enclosures provide excellent acoustic performance due to their rigidity and ability to reduce unwanted vibrations."
+    },
+    "mdf": {
+      "title": "MDF",
+      "description": "MDF (Medium-Density Fiberboard) is a popular material for speaker enclosures due to its uniform density and smooth surface. It offers excellent sound insulation properties and minimizes resonance, resulting in clear and accurate sound reproduction. MDF is easy to work with, allowing for precise shaping and finishing of the cabinets."
+    },
+    "lacquer": {
+      "title": "Lacquer",
+      "description": "High-gloss lacquer finish provides a mirror-like shine and exceptional durability. This finishing option not only enhances the visual appeal of the speaker cabinets but also protects them from scratches and environmental factors. Lacquered surfaces are easy to clean and maintain, ensuring that your speakers look stunning for years to come."
+    },
+    "veneer": {
+      "title": "Wood Veneering",
+      "description": "Veneer is a thin layer of natural wood applied to the surface of the enclosure, allowing for the effect of luxurious wood while maintaining the durability and stability of MDF. We offer a wide selection of veneers that can be matched to any interior style."
+    },
+    "oil": {
+      "title": "Oiling",
+      "description": "Oiled finishes highlight the natural beauty of wood, accentuating its grain and color. Oiling provides protection against moisture and dirt while giving the surface a soft, satin sheen."
+    },
+    "question": "Would you like to use other materials or finishings?",
+    "answer": "We are open to working with any materials you propose. Contact us to discuss the details of your project and customize the speaker cabinets to your individual needs.",
+    "button": "Contact Us for more details"
+  },
   "OrderProcess": {
     "title": "How to order?",
     "subtitle": "You'r first step to your dream speakers",
@@ -270,7 +304,7 @@
     "q3": "Do you offer finishing options?",
     "a3": "We provide multiple finishes – natural veneers, matte coatings, and high-gloss lacquers – so the enclosure matches both your sound system and your interior.",
     "q4": "How long does production take?",
-    "a4": "Depending on complexity, standard lead time is 4–8 weeks after pre-payment. Larger or highly customized projects may take longer.",
+    "a4": "Depending on complexity, standard lead time is 2–4 weeks after pre-payment. Larger or highly customized projects may take longer.",
     "q5": "Do you ship internationally?",
     "a5": "Yes, we ship worldwide. Our cabinets are safely packed to prevent any transport damage.",
     "q6": "Do you work with audio manufacturers as well as individuals?",
