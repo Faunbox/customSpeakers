@@ -63,7 +63,7 @@
   "Navigation": {
     "home": "Home",
     "about": "About Us",
-    "offer": "Our offer",
+    "offer": "Our Services",
     "gallery": "Gallery",
     "history": "Finishes",
     "diy": "DIY",
@@ -92,7 +92,7 @@
     "satisfaction": "Satisfaction"
   },
   "Offer": {
-    "title": "Offert",
+    "title": "Our Services",
     "subtitle": "Comprehensive audio solutions tailored to your needs.",
     "customSpeakers": {
       "title": "Custom Speakers",
